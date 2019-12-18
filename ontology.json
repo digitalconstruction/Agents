@@ -1,9 +1,6 @@
 [ {
-  "@id" : "http://purl.obolibrary.org/obo/BFO_0000004",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.obolibrary.org/obo/BFO_0000040",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/ns/org#Organization",
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
@@ -20,7 +17,7 @@
     "@id" : "https://w3id.org/digitalconstruction/Agents#Person"
   } ]
 }, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#",
+  "@id" : "https://w3id.org/digitalconstruction/Agents",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Seppo Torma"
@@ -47,15 +44,13 @@
     "@value" : "An organized group of people with a particular purpose involves in the process."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000004"
-  }, {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Agents#Person",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A human being involves in the process."
+    "@value" : "A human being involves in the construction process."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000040"
@@ -71,10 +66,4 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Activity"
   } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#Activity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Entities#Agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 } ]

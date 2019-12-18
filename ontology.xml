@@ -3,6 +3,7 @@
      xml:base="https://w3id.org/digitalconstruction/Agents"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:org="http://www.w3.org/ns/org#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -13,7 +14,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/Agents#">
+    <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/Agents">
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Entities#"/>
@@ -22,6 +23,25 @@
         <rdfs:comment>The Agents ontology is known as one module of the Digital Construction ontology. The purpose of this module is to formalize the the information of agents who participate in the construction process, in order to support data sharing of the organizational and business information. This module can be used in organization-related information management use cases. This ontology is aligned with the existinng FOAF and ORG ontology, and also takes the top-level ontology BFO into account.</rdfs:comment>
         <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
@@ -59,20 +79,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
-
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    
-
-
     <!-- http://www.w3.org/ns/org#Organization -->
 
 
@@ -104,7 +110,6 @@
 
 
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Agents#Organization">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
         <rdfs:comment>An organized group of people with a particular purpose involves in the process.</rdfs:comment>
     </owl:Class>
@@ -117,22 +122,8 @@
     <owl:Class rdf:about="https://w3id.org/digitalconstruction/Agents#Person">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/digitalconstruction/Entities#Agent"/>
-        <rdfs:comment>A human being involves in the process.</rdfs:comment>
+        <rdfs:comment>A human being involves in the construction process.</rdfs:comment>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/digitalconstruction/Entities#Activity -->
-
-
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Activity"/>
-    
-
-
-    <!-- https://w3id.org/digitalconstruction/Entities#Agent -->
-
-
-    <owl:Class rdf:about="https://w3id.org/digitalconstruction/Entities#Agent"/>
 </rdf:RDF>
 
 
