@@ -1,6 +1,5 @@
 <https://w3id.org/digitalconstruction/Agents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/digitalconstruction/Agents> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> .
-<https://w3id.org/digitalconstruction/Agents> <http://www.w3.org/2002/07/owl#imports> <http://xmlns.com/foaf/0.1/> .
 <https://w3id.org/digitalconstruction/Agents> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Entities> .
 <https://w3id.org/digitalconstruction/Agents> <http://purl.org/dc/elements/1.1/date> "2020-03-20" .
 <https://w3id.org/digitalconstruction/Agents> <http://purl.org/dc/elements/1.1/title> "Digital Construction Agents" .
@@ -92,9 +91,11 @@
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Agents#Organization> .
 # 
 # http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Agents#Organization> .
 # 
 # http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Agents#Person> .
 # 
 # https://w3id.org/digitalconstruction/Agents#ArchitecturalDesign

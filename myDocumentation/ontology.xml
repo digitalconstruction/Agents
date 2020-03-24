@@ -2,19 +2,15 @@
 <rdf:RDF xmlns="https://w3id.org/digitalconstruction/Agents#"
      xml:base="https://w3id.org/digitalconstruction/Agents"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/digitalconstruction/Agents">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl"/>
-        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <owl:imports rdf:resource="https://w3id.org/digitalconstruction/Entities"/>
         <dc:date>2020-03-20</dc:date>
         <dc:title>Digital Construction Agents</dc:title>
@@ -175,18 +171,18 @@
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization">
         <owl:equivalentClass rdf:resource="https://w3id.org/digitalconstruction/Agents#Organization"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person">
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
         <owl:equivalentClass rdf:resource="https://w3id.org/digitalconstruction/Agents#Person"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
