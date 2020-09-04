@@ -33,13 +33,11 @@
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Organization",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Agents#Organization"
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Person",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/digitalconstruction/Agents#Person"
   } ]
@@ -47,10 +45,10 @@
   "@id" : "https://w3id.org/digitalconstruction/Agents",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/date" : [ {
-    "@value" : "2020-03-20"
+    "@value" : "2020-03-09"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
-    "@value" : "Digital Construction Agents"
+    "@value" : "Digital construction - Agents"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@value" : "2020-01-12"
@@ -73,269 +71,15 @@
     "@value" : "Agents ontology formalize the the representation of the actors and stakeholders over the construction lifecycle, to support data sharing of the social, organizational and contractural relations. The ontology is based on BFO and is aligned with FOAF and ORG."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Digital Construction Agents"
+    "@value" : "Digital construction - Agents"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://w3id.org/digitalconstruction"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl"
+    "@id" : "http://xmlns.com/foaf/0.1/"
   }, {
-    "@id" : "https://w3id.org/digitalconstruction/Entities"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#ArchitecturalDesign",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ArchitecturalDesign"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#DesignCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#BuildingPermitAuthority",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "BuildingPermitAuthority"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#StakeholderRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#BuildingSystemsDesign",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "BuildingSystemsDesign"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#DesignCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Carpentry",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Carpentry"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Company",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Company"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#Organization"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#ConsortiumRole",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ConsortiumRole"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ConstructionCapability"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Capability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionWorker",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ConstructionWorker"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#IndividualRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#CostEngineering",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CostEngineering"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ManagementCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#CraneOperation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "CraneOperation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#OperationCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Crew",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Crew"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#Organization"
-  }, {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Group"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#DataGatheringCapability",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "DataGatheringCapability"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Capability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#DesignCapability",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "DesignCapability"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Capability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#DesignManagement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "DesignManagement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ManagementCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Designer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Designer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#IndividualRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Driving",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Driving"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#OperationCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#ElectricalWork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ElectricalWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Fireproofing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Fireproofing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#FloorCovering",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "FloorCovering"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Foreman",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Foreman"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#IndividualRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#GeneralContractor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "GeneralContractor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConsortiumRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#IndividualRole",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "IndividualRole"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#LogisticsManagement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "LogisticsManagement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ManagementCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#ManagementCapability",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ManagementCapability"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Capability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Masonry",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Masonry"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#MechanicalWork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "MechanicalWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Occupant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Occupant"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#StakeholderRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#OperationCapability",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "OperationCapability"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Entities#Capability"
+    "@id" : "https://w3id.org/digitalconstruction/Entities#"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Agents#Organization",
@@ -343,22 +87,8 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An organized group of people with a particular purpose involved in the process."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Organization"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000027"
-  }, {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Painting",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Painting"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Agents#Person",
@@ -366,202 +96,10 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A human being involved in the construction process."
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Person"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.obolibrary.org/obo/BFO_0000040"
   }, {
     "@id" : "https://w3id.org/digitalconstruction/Entities#Agent"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Plumbing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Plumbing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#PrecastInstallation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "PrecastInstallation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#PrincipalDesigner",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "PrincipalDesigner"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConsortiumRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#ProcurementManagement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ProcurementManagement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ManagementCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#ProjectLeader",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ProjectLeader"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#IndividualRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#ProjectManagement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ProjectManagement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ManagementCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#ProjectOwner",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ProjectOwner"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConsortiumRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#QuantitySurveying",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ManagementCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#ReinforcementInstallation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ReinforcementInstallation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#SafetyEngineering",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "SafetyEngineering"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ManagementCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#SiteManagement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "SiteManagement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ManagementCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#SiteManager",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "SiteManager"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#IndividualRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#SiteSurveying",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "SiteSurveying"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#DataGatheringCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#StakeholderRole",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "StakeholderRole"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.obolibrary.org/obo/BFO_0000023"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#SteelStructureInstallation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "SteelStructureInstallation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#StructuralDesign",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "StructuralDesign"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#DesignCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#StructuralDetailing",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "StructuralDetailing"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#DesignCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Subcontractor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Subcontractor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConsortiumRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Tiling",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Tiling"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConstructionCapability"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#Vendor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Vendor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#ConsortiumRole"
-  } ]
-}, {
-  "@id" : "https://w3id.org/digitalconstruction/Agents#hasCrewSize",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "hasCrewSize"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/digitalconstruction/Agents#Crew"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
   "@id" : "https://w3id.org/digitalconstruction/Agents#isResponsiblefor",

@@ -1,4 +1,22 @@
 <h2 id="desc" class="list">Digital construction - Agents: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
+<p> The basic class of agents, <tt>dice:Agent</tt> is defined in the
+Entities ontology. It has a relationship <tt>isAgentIn / hasAgent</tt>
+with activities (<tt>dice:Activity</tt>).  </p>
+
+<p> Agents are further classified into persons (<tt>dica:Person</tt>) and
+organizations (<tt>dica:Organization</tt>). All these three concepts
+(<tt>dice:Agent</tt>, <tt>dica:Person</tt>, and
+<tt>dica:Organization</tt>) are aligned with corresponding concepts in
+FOAF and Org ontologies.
+</p>
+
+<p> Agents ontology also specifies a set of roles and capabilities of agents, as relevant to the construction domain. A role (<tt>dica:Role</tt>) is a subclass of <tt>role</tt> in BFO and capability (<tt>dica:Capability</tt>) is a subclass of <tt>disposition</tt> in BFO. Both of them are things that an agent does not inherently have but can become to posses. Roles are externally acquired (e.g., granted by someone else) while capacilities are internally achieved (e.g., through learning).   </p>
+
+<p>
+The figure below show the class hierarchy relevant to Agents ontology. In addition to the classes shown in the figure, there are a number of concrete subclasses for roles and capabilties. 
+</p>
+
+<center>
+<img width="50%" src="sections/agents-classes.png">
+</center>
