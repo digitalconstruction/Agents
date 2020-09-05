@@ -11,7 +11,11 @@ organizations (<tt>dica:Organization</tt>). All these three concepts
 FOAF and Org ontologies.
 </p>
 
-<p> Agents ontology also specifies a set of roles and capabilities of agents, as relevant to the construction domain. A role (<tt>dica:Role</tt>) is a subclass of <tt>role</tt> in BFO and capability (<tt>dica:Capability</tt>) is a subclass of <tt>disposition</tt> in BFO. Both of them are things that an agent does not inherently have but can become to posses. Roles are externally acquired (e.g., granted by someone else) while capacilities are internally achieved (e.g., through learning).   </p>
+<p> Agents ontology also specifies a set of roles and capabilities of agents, as relevant to the construction domain. A role (<tt>dica:Role</tt>) is a subclass of <tt>role</tt> in BFO and capability (<tt>dica:Capability</tt>) is a subclass of <tt>disposition</tt> in BFO. Both of them are things that an agent does not inherently have but can become to posess. Roles are externally acquired (e.g., granted by someone else) while capacilities are internally achieved (e.g., through learning or adaptation).  Roles are associated with agents through the object property <tt>dice:hasRole</tt> and capabilities through <tt>dice:hasCapability</tt>, both ultimately specializations of BFO property <tt>bearer of</tt>. </p>
+
+<p>
+Agents (<tt>dice:Agent</tt>) are related to activities (<tt>dice:Activity</tt>) through the object property <tt>dice:isAgentIn</tt> (inverse: <tt>dice:hasAgent</tt>, specialization of BFO's <tt>has participant</tt>). 
+</p>
 
 <p>
 The figure below show the class hierarchy relevant to Agents ontology. In addition to the classes shown in the figure, there are a number of concrete subclasses for roles and capabilties. 
