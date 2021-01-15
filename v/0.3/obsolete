@@ -1,0 +1,58 @@
+
+<p>
+Concrete capabilities are listed below:
+</p>
+<ul>
+  <li>ConstructionCapability
+  <ul>
+    <li>Carpentry</li>
+    <li>ElectricalWork</li>
+    <li>Fireproofing</li>
+    <li>FloorCovering</li>
+    <li>Masonry</li>
+    <li>MechanicalWork</li>
+    <li>Painting</li>
+    <li>Plumbing</li>
+    <li>PrecastInstallation</li>
+    <li>ReinforcementInstallation</li>
+    <li>SteelStructureInstallation</li>
+    <li>Tiling</li>
+  </ul>
+</li>
+
+<li>DataGatheringCapability
+<ul>
+  <li>SiteSurveying</li>
+</ul>
+</li>
+
+<li>DesignCapability
+<ul>
+  <li>ArchitecturalDesign</li>
+  <li>BuildingSystemsDesign</li>
+  <li>StructuralDesign</li>
+  <li>StructuralDetailing</li>
+</ul>
+</li>
+
+<li>ManagementCapability
+<ul>
+  <li>CostEngineering</li>
+  <li>DesignManagement</li>
+  <li>LogisticsManagement</li>
+  <li>ProcurementManagement</li>
+  <li>ProjectManagement</li>
+  <li>QuantitySurveying</li>
+  <li>SafetyEngineering</li>
+  <li>SiteManagement</li>
+</ul>
+</li>
+
+<li>OperationCapability
+<ul>
+  <li>CraneOperation</li>
+  <li>Driving</li>
+</ul>
+</li>
+
+</ul>
