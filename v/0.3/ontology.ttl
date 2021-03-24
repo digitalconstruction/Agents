@@ -1,14 +1,14 @@
-@prefix : <https://w3id.org/digitalconstruction/Agents#> .
+@prefix : <https://w3id.org/digitalconstruction/0.3/Agents#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/digitalconstruction/Agents> .
+@base <https://w3id.org/digitalconstruction/0.3/Agents> .
 
-<https://w3id.org/digitalconstruction/Agents> rdf:type owl:Ontology ;
+<https://w3id.org/digitalconstruction/0.3/Agents> rdf:type owl:Ontology ;
                                                owl:imports <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> ,
-                                                           <https://w3id.org/digitalconstruction/Entities> ;
+                                                           <https://w3id.org/digitalconstruction/0.3/Entities> ;
                                                <http://purl.org/dc/elements/1.1/date> "2020-03-20" ;
                                                <http://purl.org/dc/elements/1.1/title> "Digital Construction Agents" ;
                                                <http://purl.org/dc/terms/created> "2020-01-12" ;
@@ -16,7 +16,7 @@
                                                                                   "Yuan Zheng" ;
                                                <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                                <http://purl.org/vocab/vann/preferredNamespacePrefix> "dica" ;
-                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Agents" ;
+                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/0.3/Agents" ;
                                                rdfs:comment "Agents ontology formalize the the representation of the actors and stakeholders over the construction lifecycle, to support data sharing of the social, organizational and contractural relations. The ontology is based on BFO and is aligned with FOAF and ORG." ;
                                                rdfs:label "Digital Construction Agents" ;
                                                rdfs:seeAlso <https://w3id.org/digitalconstruction> .
@@ -65,17 +65,17 @@
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/digitalconstruction/Agents#isResponsiblefor
+###  https://w3id.org/digitalconstruction/0.3/Agents#isResponsiblefor
 :isResponsiblefor rdf:type owl:ObjectProperty ;
-                  rdfs:domain <https://w3id.org/digitalconstruction/Entities#Agent> ;
-                  rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> .
+                  rdfs:domain <https://w3id.org/digitalconstruction/0.3/Entities#Agent> ;
+                  rdfs:range <https://w3id.org/digitalconstruction/0.3/Entities#Activity> .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://w3id.org/digitalconstruction/Agents#hasCrewSize
+###  https://w3id.org/digitalconstruction/0.3/Agents#hasCrewSize
 :hasCrewSize rdf:type owl:DatatypeProperty ;
              rdfs:domain :Crew ;
              rdfs:range xsd:integer ;
@@ -101,311 +101,311 @@
                                    owl:equivalentClass :Person .
 
 
-###  https://w3id.org/digitalconstruction/Agents#ArchitecturalDesign
+###  https://w3id.org/digitalconstruction/0.3/Agents#ArchitecturalDesign
 :ArchitecturalDesign rdf:type owl:Class ;
                      rdfs:subClassOf :DesignCapability ;
                      rdfs:label "ArchitecturalDesign" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#BuildingPermitAuthority
+###  https://w3id.org/digitalconstruction/0.3/Agents#BuildingPermitAuthority
 :BuildingPermitAuthority rdf:type owl:Class ;
                          rdfs:subClassOf :StakeholderRole ;
                          rdfs:label "BuildingPermitAuthority" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#BuildingSystemsDesign
+###  https://w3id.org/digitalconstruction/0.3/Agents#BuildingSystemsDesign
 :BuildingSystemsDesign rdf:type owl:Class ;
                        rdfs:subClassOf :DesignCapability ;
                        rdfs:label "BuildingSystemsDesign" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Carpentry
+###  https://w3id.org/digitalconstruction/0.3/Agents#Carpentry
 :Carpentry rdf:type owl:Class ;
            rdfs:subClassOf :ConstructionCapability ;
            rdfs:label "Carpentry" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Company
+###  https://w3id.org/digitalconstruction/0.3/Agents#Company
 :Company rdf:type owl:Class ;
          rdfs:subClassOf :Organization ;
          rdfs:label "Company" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#ConsortiumRole
+###  https://w3id.org/digitalconstruction/0.3/Agents#ConsortiumRole
 :ConsortiumRole rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                 rdfs:label "ConsortiumRole" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#ConstructionCapability
+###  https://w3id.org/digitalconstruction/0.3/Agents#ConstructionCapability
 :ConstructionCapability rdf:type owl:Class ;
-                        rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#Capability> ;
+                        rdfs:subClassOf <https://w3id.org/digitalconstruction/0.3/Entities#Capability> ;
                         rdfs:label "ConstructionCapability" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#ConstructionWorker
+###  https://w3id.org/digitalconstruction/0.3/Agents#ConstructionWorker
 :ConstructionWorker rdf:type owl:Class ;
                     rdfs:subClassOf :IndividualRole ;
                     rdfs:label "ConstructionWorker" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#CostEngineering
+###  https://w3id.org/digitalconstruction/0.3/Agents#CostEngineering
 :CostEngineering rdf:type owl:Class ;
                  rdfs:subClassOf :ManagementCapability ;
                  rdfs:label "CostEngineering" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#CraneOperation
+###  https://w3id.org/digitalconstruction/0.3/Agents#CraneOperation
 :CraneOperation rdf:type owl:Class ;
                 rdfs:subClassOf :OperationCapability ;
                 rdfs:label "CraneOperation" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Crew
+###  https://w3id.org/digitalconstruction/0.3/Agents#Crew
 :Crew rdf:type owl:Class ;
       rdfs:subClassOf :Organization ,
-                      <https://w3id.org/digitalconstruction/Entities#Group> ;
+                      <https://w3id.org/digitalconstruction/0.3/Entities#Group> ;
       rdfs:label "Crew" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#DataGatheringCapability
+###  https://w3id.org/digitalconstruction/0.3/Agents#DataGatheringCapability
 :DataGatheringCapability rdf:type owl:Class ;
-                         rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#Capability> ;
+                         rdfs:subClassOf <https://w3id.org/digitalconstruction/0.3/Entities#Capability> ;
                          rdfs:label "DataGatheringCapability" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#DesignCapability
+###  https://w3id.org/digitalconstruction/0.3/Agents#DesignCapability
 :DesignCapability rdf:type owl:Class ;
-                  rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#Capability> ;
+                  rdfs:subClassOf <https://w3id.org/digitalconstruction/0.3/Entities#Capability> ;
                   rdfs:label "DesignCapability" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#DesignManagement
+###  https://w3id.org/digitalconstruction/0.3/Agents#DesignManagement
 :DesignManagement rdf:type owl:Class ;
                   rdfs:subClassOf :ManagementCapability ;
                   rdfs:label "DesignManagement" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Designer
+###  https://w3id.org/digitalconstruction/0.3/Agents#Designer
 :Designer rdf:type owl:Class ;
           rdfs:subClassOf :IndividualRole ;
           rdfs:label "Designer" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Driving
+###  https://w3id.org/digitalconstruction/0.3/Agents#Driving
 :Driving rdf:type owl:Class ;
          rdfs:subClassOf :OperationCapability ;
          rdfs:label "Driving" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#ElectricalWork
+###  https://w3id.org/digitalconstruction/0.3/Agents#ElectricalWork
 :ElectricalWork rdf:type owl:Class ;
                 rdfs:subClassOf :ConstructionCapability ;
                 rdfs:label "ElectricalWork" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Fireproofing
+###  https://w3id.org/digitalconstruction/0.3/Agents#Fireproofing
 :Fireproofing rdf:type owl:Class ;
               rdfs:subClassOf :ConstructionCapability ;
               rdfs:label "Fireproofing" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#FloorCovering
+###  https://w3id.org/digitalconstruction/0.3/Agents#FloorCovering
 :FloorCovering rdf:type owl:Class ;
                rdfs:subClassOf :ConstructionCapability ;
                rdfs:label "FloorCovering" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Foreman
+###  https://w3id.org/digitalconstruction/0.3/Agents#Foreman
 :Foreman rdf:type owl:Class ;
          rdfs:subClassOf :IndividualRole ;
          rdfs:label "Foreman" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#GeneralContractor
+###  https://w3id.org/digitalconstruction/0.3/Agents#GeneralContractor
 :GeneralContractor rdf:type owl:Class ;
                    rdfs:subClassOf :ConsortiumRole ;
                    rdfs:label "GeneralContractor" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#IndividualRole
+###  https://w3id.org/digitalconstruction/0.3/Agents#IndividualRole
 :IndividualRole rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                 rdfs:label "IndividualRole" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#LogisticsManagement
+###  https://w3id.org/digitalconstruction/0.3/Agents#LogisticsManagement
 :LogisticsManagement rdf:type owl:Class ;
                      rdfs:subClassOf :ManagementCapability ;
                      rdfs:label "LogisticsManagement" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#ManagementCapability
+###  https://w3id.org/digitalconstruction/0.3/Agents#ManagementCapability
 :ManagementCapability rdf:type owl:Class ;
-                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#Capability> ;
+                      rdfs:subClassOf <https://w3id.org/digitalconstruction/0.3/Entities#Capability> ;
                       rdfs:label "ManagementCapability" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Masonry
+###  https://w3id.org/digitalconstruction/0.3/Agents#Masonry
 :Masonry rdf:type owl:Class ;
          rdfs:subClassOf :ConstructionCapability ;
          rdfs:label "Masonry" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#MechanicalWork
+###  https://w3id.org/digitalconstruction/0.3/Agents#MechanicalWork
 :MechanicalWork rdf:type owl:Class ;
                 rdfs:subClassOf :ConstructionCapability ;
                 rdfs:label "MechanicalWork" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Occupant
+###  https://w3id.org/digitalconstruction/0.3/Agents#Occupant
 :Occupant rdf:type owl:Class ;
           rdfs:subClassOf :StakeholderRole ;
           rdfs:label "Occupant" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#OperationCapability
+###  https://w3id.org/digitalconstruction/0.3/Agents#OperationCapability
 :OperationCapability rdf:type owl:Class ;
-                     rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#Capability> ;
+                     rdfs:subClassOf <https://w3id.org/digitalconstruction/0.3/Entities#Capability> ;
                      rdfs:label "OperationCapability" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Organization
+###  https://w3id.org/digitalconstruction/0.3/Agents#Organization
 :Organization rdf:type owl:Class ;
               rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ,
-                              <https://w3id.org/digitalconstruction/Entities#Agent> ;
+                              <https://w3id.org/digitalconstruction/0.3/Entities#Agent> ;
               rdfs:comment "An organized group of people with a particular purpose involved in the process." ;
               rdfs:label "Organization" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Painting
+###  https://w3id.org/digitalconstruction/0.3/Agents#Painting
 :Painting rdf:type owl:Class ;
           rdfs:subClassOf :ConstructionCapability ;
           rdfs:label "Painting" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Person
+###  https://w3id.org/digitalconstruction/0.3/Agents#Person
 :Person rdf:type owl:Class ;
         rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ,
-                        <https://w3id.org/digitalconstruction/Entities#Agent> ;
+                        <https://w3id.org/digitalconstruction/0.3/Entities#Agent> ;
         rdfs:comment "A human being involved in the construction process." ;
         rdfs:label "Person" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Plumbing
+###  https://w3id.org/digitalconstruction/0.3/Agents#Plumbing
 :Plumbing rdf:type owl:Class ;
           rdfs:subClassOf :ConstructionCapability ;
           rdfs:label "Plumbing" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#PrecastInstallation
+###  https://w3id.org/digitalconstruction/0.3/Agents#PrecastInstallation
 :PrecastInstallation rdf:type owl:Class ;
                      rdfs:subClassOf :ConstructionCapability ;
                      rdfs:label "PrecastInstallation" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#PrincipalDesigner
+###  https://w3id.org/digitalconstruction/0.3/Agents#PrincipalDesigner
 :PrincipalDesigner rdf:type owl:Class ;
                    rdfs:subClassOf :ConsortiumRole ;
                    rdfs:label "PrincipalDesigner" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#ProcurementManagement
+###  https://w3id.org/digitalconstruction/0.3/Agents#ProcurementManagement
 :ProcurementManagement rdf:type owl:Class ;
                        rdfs:subClassOf :ManagementCapability ;
                        rdfs:label "ProcurementManagement" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#ProjectLeader
+###  https://w3id.org/digitalconstruction/0.3/Agents#ProjectLeader
 :ProjectLeader rdf:type owl:Class ;
                rdfs:subClassOf :IndividualRole ;
                rdfs:label "ProjectLeader" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#ProjectManagement
+###  https://w3id.org/digitalconstruction/0.3/Agents#ProjectManagement
 :ProjectManagement rdf:type owl:Class ;
                    rdfs:subClassOf :ManagementCapability ;
                    rdfs:label "ProjectManagement" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#ProjectOwner
+###  https://w3id.org/digitalconstruction/0.3/Agents#ProjectOwner
 :ProjectOwner rdf:type owl:Class ;
               rdfs:subClassOf :ConsortiumRole ;
               rdfs:label "ProjectOwner" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#QuantitySurveying
+###  https://w3id.org/digitalconstruction/0.3/Agents#QuantitySurveying
 :QuantitySurveying rdf:type owl:Class ;
                    rdfs:subClassOf :ManagementCapability .
 
 
-###  https://w3id.org/digitalconstruction/Agents#ReinforcementInstallation
+###  https://w3id.org/digitalconstruction/0.3/Agents#ReinforcementInstallation
 :ReinforcementInstallation rdf:type owl:Class ;
                            rdfs:subClassOf :ConstructionCapability ;
                            rdfs:label "ReinforcementInstallation" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#SafetyEngineering
+###  https://w3id.org/digitalconstruction/0.3/Agents#SafetyEngineering
 :SafetyEngineering rdf:type owl:Class ;
                    rdfs:subClassOf :ManagementCapability ;
                    rdfs:label "SafetyEngineering" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#SiteManagement
+###  https://w3id.org/digitalconstruction/0.3/Agents#SiteManagement
 :SiteManagement rdf:type owl:Class ;
                 rdfs:subClassOf :ManagementCapability ;
                 rdfs:label "SiteManagement" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#SiteManager
+###  https://w3id.org/digitalconstruction/0.3/Agents#SiteManager
 :SiteManager rdf:type owl:Class ;
              rdfs:subClassOf :IndividualRole ;
              rdfs:label "SiteManager" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#SiteSurveying
+###  https://w3id.org/digitalconstruction/0.3/Agents#SiteSurveying
 :SiteSurveying rdf:type owl:Class ;
                rdfs:subClassOf :DataGatheringCapability ;
                rdfs:label "SiteSurveying" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#StakeholderRole
+###  https://w3id.org/digitalconstruction/0.3/Agents#StakeholderRole
 :StakeholderRole rdf:type owl:Class ;
                  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
                  rdfs:label "StakeholderRole" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#SteelStructureInstallation
+###  https://w3id.org/digitalconstruction/0.3/Agents#SteelStructureInstallation
 :SteelStructureInstallation rdf:type owl:Class ;
                             rdfs:subClassOf :ConstructionCapability ;
                             rdfs:label "SteelStructureInstallation" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#StructuralDesign
+###  https://w3id.org/digitalconstruction/0.3/Agents#StructuralDesign
 :StructuralDesign rdf:type owl:Class ;
                   rdfs:subClassOf :DesignCapability ;
                   rdfs:label "StructuralDesign" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#StructuralDetailing
+###  https://w3id.org/digitalconstruction/0.3/Agents#StructuralDetailing
 :StructuralDetailing rdf:type owl:Class ;
                      rdfs:subClassOf :DesignCapability ;
                      rdfs:label "StructuralDetailing" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Subcontractor
+###  https://w3id.org/digitalconstruction/0.3/Agents#Subcontractor
 :Subcontractor rdf:type owl:Class ;
                rdfs:subClassOf :ConsortiumRole ;
                rdfs:label "Subcontractor" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Tiling
+###  https://w3id.org/digitalconstruction/0.3/Agents#Tiling
 :Tiling rdf:type owl:Class ;
         rdfs:subClassOf :ConstructionCapability ;
         rdfs:label "Tiling" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Vendor
+###  https://w3id.org/digitalconstruction/0.3/Agents#Vendor
 :Vendor rdf:type owl:Class ;
         rdfs:subClassOf :ConsortiumRole ;
         rdfs:label "Vendor" .

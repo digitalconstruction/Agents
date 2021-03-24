@@ -1,17 +1,17 @@
-<https://w3id.org/digitalconstruction/Agents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/digitalconstruction/Agents> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> .
-<https://w3id.org/digitalconstruction/Agents> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Entities> .
-<https://w3id.org/digitalconstruction/Agents> <http://purl.org/dc/elements/1.1/date> "2020-03-20" .
-<https://w3id.org/digitalconstruction/Agents> <http://purl.org/dc/elements/1.1/title> "Digital Construction Agents" .
-<https://w3id.org/digitalconstruction/Agents> <http://purl.org/dc/terms/created> "2020-01-12" .
-<https://w3id.org/digitalconstruction/Agents> <http://purl.org/dc/terms/creator> "Seppo Törmä" .
-<https://w3id.org/digitalconstruction/Agents> <http://purl.org/dc/terms/creator> "Yuan Zheng" .
-<https://w3id.org/digitalconstruction/Agents> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://w3id.org/digitalconstruction/Agents> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dica" .
-<https://w3id.org/digitalconstruction/Agents> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Agents" .
-<https://w3id.org/digitalconstruction/Agents> <http://www.w3.org/2000/01/rdf-schema#comment> "Agents ontology formalize the the representation of the actors and stakeholders over the construction lifecycle, to support data sharing of the social, organizational and contractural relations. The ontology is based on BFO and is aligned with FOAF and ORG." .
-<https://w3id.org/digitalconstruction/Agents> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Construction Agents" .
-<https://w3id.org/digitalconstruction/Agents> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/digitalconstruction> .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://www.w3.org/2002/07/owl#imports> <http://purl.obolibrary.org/obo/bfo/2018-10-27/iso-21838.owl> .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/digitalconstruction/Entities> .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://purl.org/dc/elements/1.1/date> "2020-03-20" .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://purl.org/dc/elements/1.1/title> "Digital Construction Agents" .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://purl.org/dc/terms/created> "2020-01-12" .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://purl.org/dc/terms/creator> "Seppo Törmä" .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://purl.org/dc/terms/creator> "Yuan Zheng" .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://purl.org/vocab/vann/preferredNamespacePrefix> "dica" .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/digitalconstruction/Agents" .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://www.w3.org/2000/01/rdf-schema#comment> "Agents ontology formalize the the representation of the actors and stakeholders over the construction lifecycle, to support data sharing of the social, organizational and contractural relations. The ontology is based on BFO and is aligned with FOAF and ORG." .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://www.w3.org/2000/01/rdf-schema#label> "Digital Construction Agents" .
+<https://w3id.org/digitalconstruction/0.3/Agents> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/digitalconstruction> .
 # 
 # 
 # #################################################################
@@ -57,10 +57,10 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/digitalconstruction/Agents#isResponsiblefor
-<https://w3id.org/digitalconstruction/Agents#isResponsiblefor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/digitalconstruction/Agents#isResponsiblefor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Agent> .
-<https://w3id.org/digitalconstruction/Agents#isResponsiblefor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
+# https://w3id.org/digitalconstruction/0.3/Agents#isResponsiblefor
+<https://w3id.org/digitalconstruction/0.3/Agents#isResponsiblefor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/digitalconstruction/0.3/Agents#isResponsiblefor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/0.3/Agents#isResponsiblefor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/digitalconstruction/Entities#Activity> .
 # 
 # 
 # 
@@ -71,11 +71,11 @@
 # #################################################################
 # 
 # 
-# https://w3id.org/digitalconstruction/Agents#hasCrewSize
-<https://w3id.org/digitalconstruction/Agents#hasCrewSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/digitalconstruction/Agents#hasCrewSize> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Agents#Crew> .
-<https://w3id.org/digitalconstruction/Agents#hasCrewSize> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
-<https://w3id.org/digitalconstruction/Agents#hasCrewSize> <http://www.w3.org/2000/01/rdf-schema#comment> "hasCrewSize" .
+# https://w3id.org/digitalconstruction/0.3/Agents#hasCrewSize
+<https://w3id.org/digitalconstruction/0.3/Agents#hasCrewSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/digitalconstruction/0.3/Agents#hasCrewSize> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/digitalconstruction/Agents#Crew> .
+<https://w3id.org/digitalconstruction/0.3/Agents#hasCrewSize> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/digitalconstruction/0.3/Agents#hasCrewSize> <http://www.w3.org/2000/01/rdf-schema#comment> "hasCrewSize" .
 # 
 # 
 # 
@@ -88,273 +88,273 @@
 # 
 # http://www.w3.org/ns/org#Organization
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Agents#Organization> .
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/0.3/Agents#Organization> .
 # 
 # http://xmlns.com/foaf/0.1/Organization
 <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Agents#Organization> .
+<http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/0.3/Agents#Organization> .
 # 
 # http://xmlns.com/foaf/0.1/Person
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/Agents#Person> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/digitalconstruction/0.3/Agents#Person> .
 # 
-# https://w3id.org/digitalconstruction/Agents#ArchitecturalDesign
-<https://w3id.org/digitalconstruction/Agents#ArchitecturalDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#ArchitecturalDesign> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#DesignCapability> .
-<https://w3id.org/digitalconstruction/Agents#ArchitecturalDesign> <http://www.w3.org/2000/01/rdf-schema#label> "ArchitecturalDesign" .
+# https://w3id.org/digitalconstruction/0.3/Agents#ArchitecturalDesign
+<https://w3id.org/digitalconstruction/0.3/Agents#ArchitecturalDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ArchitecturalDesign> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#DesignCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ArchitecturalDesign> <http://www.w3.org/2000/01/rdf-schema#label> "ArchitecturalDesign" .
 # 
-# https://w3id.org/digitalconstruction/Agents#BuildingPermitAuthority
-<https://w3id.org/digitalconstruction/Agents#BuildingPermitAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#BuildingPermitAuthority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#StakeholderRole> .
-<https://w3id.org/digitalconstruction/Agents#BuildingPermitAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingPermitAuthority" .
+# https://w3id.org/digitalconstruction/0.3/Agents#BuildingPermitAuthority
+<https://w3id.org/digitalconstruction/0.3/Agents#BuildingPermitAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#BuildingPermitAuthority> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#StakeholderRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#BuildingPermitAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingPermitAuthority" .
 # 
-# https://w3id.org/digitalconstruction/Agents#BuildingSystemsDesign
-<https://w3id.org/digitalconstruction/Agents#BuildingSystemsDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#BuildingSystemsDesign> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#DesignCapability> .
-<https://w3id.org/digitalconstruction/Agents#BuildingSystemsDesign> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingSystemsDesign" .
+# https://w3id.org/digitalconstruction/0.3/Agents#BuildingSystemsDesign
+<https://w3id.org/digitalconstruction/0.3/Agents#BuildingSystemsDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#BuildingSystemsDesign> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#DesignCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#BuildingSystemsDesign> <http://www.w3.org/2000/01/rdf-schema#label> "BuildingSystemsDesign" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Carpentry
-<https://w3id.org/digitalconstruction/Agents#Carpentry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Carpentry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#Carpentry> <http://www.w3.org/2000/01/rdf-schema#label> "Carpentry" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Carpentry
+<https://w3id.org/digitalconstruction/0.3/Agents#Carpentry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Carpentry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Carpentry> <http://www.w3.org/2000/01/rdf-schema#label> "Carpentry" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Company
-<https://w3id.org/digitalconstruction/Agents#Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#Organization> .
-<https://w3id.org/digitalconstruction/Agents#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Company" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Company
+<https://w3id.org/digitalconstruction/0.3/Agents#Company> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Company> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#Organization> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Company> <http://www.w3.org/2000/01/rdf-schema#label> "Company" .
 # 
-# https://w3id.org/digitalconstruction/Agents#ConsortiumRole
-<https://w3id.org/digitalconstruction/Agents#ConsortiumRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#ConsortiumRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
-<https://w3id.org/digitalconstruction/Agents#ConsortiumRole> <http://www.w3.org/2000/01/rdf-schema#label> "ConsortiumRole" .
+# https://w3id.org/digitalconstruction/0.3/Agents#ConsortiumRole
+<https://w3id.org/digitalconstruction/0.3/Agents#ConsortiumRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ConsortiumRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ConsortiumRole> <http://www.w3.org/2000/01/rdf-schema#label> "ConsortiumRole" .
 # 
-# https://w3id.org/digitalconstruction/Agents#ConstructionCapability
-<https://w3id.org/digitalconstruction/Agents#ConstructionCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#ConstructionCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Capability> .
-<https://w3id.org/digitalconstruction/Agents#ConstructionCapability> <http://www.w3.org/2000/01/rdf-schema#label> "ConstructionCapability" .
+# https://w3id.org/digitalconstruction/0.3/Agents#ConstructionCapability
+<https://w3id.org/digitalconstruction/0.3/Agents#ConstructionCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ConstructionCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Capability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ConstructionCapability> <http://www.w3.org/2000/01/rdf-schema#label> "ConstructionCapability" .
 # 
-# https://w3id.org/digitalconstruction/Agents#ConstructionWorker
-<https://w3id.org/digitalconstruction/Agents#ConstructionWorker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#ConstructionWorker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#IndividualRole> .
-<https://w3id.org/digitalconstruction/Agents#ConstructionWorker> <http://www.w3.org/2000/01/rdf-schema#label> "ConstructionWorker" .
+# https://w3id.org/digitalconstruction/0.3/Agents#ConstructionWorker
+<https://w3id.org/digitalconstruction/0.3/Agents#ConstructionWorker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ConstructionWorker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#IndividualRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ConstructionWorker> <http://www.w3.org/2000/01/rdf-schema#label> "ConstructionWorker" .
 # 
-# https://w3id.org/digitalconstruction/Agents#CostEngineering
-<https://w3id.org/digitalconstruction/Agents#CostEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#CostEngineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
-<https://w3id.org/digitalconstruction/Agents#CostEngineering> <http://www.w3.org/2000/01/rdf-schema#label> "CostEngineering" .
+# https://w3id.org/digitalconstruction/0.3/Agents#CostEngineering
+<https://w3id.org/digitalconstruction/0.3/Agents#CostEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#CostEngineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#CostEngineering> <http://www.w3.org/2000/01/rdf-schema#label> "CostEngineering" .
 # 
-# https://w3id.org/digitalconstruction/Agents#CraneOperation
-<https://w3id.org/digitalconstruction/Agents#CraneOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#CraneOperation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#OperationCapability> .
-<https://w3id.org/digitalconstruction/Agents#CraneOperation> <http://www.w3.org/2000/01/rdf-schema#label> "CraneOperation" .
+# https://w3id.org/digitalconstruction/0.3/Agents#CraneOperation
+<https://w3id.org/digitalconstruction/0.3/Agents#CraneOperation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#CraneOperation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#OperationCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#CraneOperation> <http://www.w3.org/2000/01/rdf-schema#label> "CraneOperation" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Crew
-<https://w3id.org/digitalconstruction/Agents#Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#Organization> .
-<https://w3id.org/digitalconstruction/Agents#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Group> .
-<https://w3id.org/digitalconstruction/Agents#Crew> <http://www.w3.org/2000/01/rdf-schema#label> "Crew" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Crew
+<https://w3id.org/digitalconstruction/0.3/Agents#Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#Organization> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Group> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Crew> <http://www.w3.org/2000/01/rdf-schema#label> "Crew" .
 # 
-# https://w3id.org/digitalconstruction/Agents#DataGatheringCapability
-<https://w3id.org/digitalconstruction/Agents#DataGatheringCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#DataGatheringCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Capability> .
-<https://w3id.org/digitalconstruction/Agents#DataGatheringCapability> <http://www.w3.org/2000/01/rdf-schema#label> "DataGatheringCapability" .
+# https://w3id.org/digitalconstruction/0.3/Agents#DataGatheringCapability
+<https://w3id.org/digitalconstruction/0.3/Agents#DataGatheringCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#DataGatheringCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Capability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#DataGatheringCapability> <http://www.w3.org/2000/01/rdf-schema#label> "DataGatheringCapability" .
 # 
-# https://w3id.org/digitalconstruction/Agents#DesignCapability
-<https://w3id.org/digitalconstruction/Agents#DesignCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#DesignCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Capability> .
-<https://w3id.org/digitalconstruction/Agents#DesignCapability> <http://www.w3.org/2000/01/rdf-schema#label> "DesignCapability" .
+# https://w3id.org/digitalconstruction/0.3/Agents#DesignCapability
+<https://w3id.org/digitalconstruction/0.3/Agents#DesignCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#DesignCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Capability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#DesignCapability> <http://www.w3.org/2000/01/rdf-schema#label> "DesignCapability" .
 # 
-# https://w3id.org/digitalconstruction/Agents#DesignManagement
-<https://w3id.org/digitalconstruction/Agents#DesignManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#DesignManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
-<https://w3id.org/digitalconstruction/Agents#DesignManagement> <http://www.w3.org/2000/01/rdf-schema#label> "DesignManagement" .
+# https://w3id.org/digitalconstruction/0.3/Agents#DesignManagement
+<https://w3id.org/digitalconstruction/0.3/Agents#DesignManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#DesignManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#DesignManagement> <http://www.w3.org/2000/01/rdf-schema#label> "DesignManagement" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Designer
-<https://w3id.org/digitalconstruction/Agents#Designer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Designer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#IndividualRole> .
-<https://w3id.org/digitalconstruction/Agents#Designer> <http://www.w3.org/2000/01/rdf-schema#label> "Designer" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Designer
+<https://w3id.org/digitalconstruction/0.3/Agents#Designer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Designer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#IndividualRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Designer> <http://www.w3.org/2000/01/rdf-schema#label> "Designer" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Driving
-<https://w3id.org/digitalconstruction/Agents#Driving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Driving> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#OperationCapability> .
-<https://w3id.org/digitalconstruction/Agents#Driving> <http://www.w3.org/2000/01/rdf-schema#label> "Driving" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Driving
+<https://w3id.org/digitalconstruction/0.3/Agents#Driving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Driving> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#OperationCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Driving> <http://www.w3.org/2000/01/rdf-schema#label> "Driving" .
 # 
-# https://w3id.org/digitalconstruction/Agents#ElectricalWork
-<https://w3id.org/digitalconstruction/Agents#ElectricalWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#ElectricalWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#ElectricalWork> <http://www.w3.org/2000/01/rdf-schema#label> "ElectricalWork" .
+# https://w3id.org/digitalconstruction/0.3/Agents#ElectricalWork
+<https://w3id.org/digitalconstruction/0.3/Agents#ElectricalWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ElectricalWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ElectricalWork> <http://www.w3.org/2000/01/rdf-schema#label> "ElectricalWork" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Fireproofing
-<https://w3id.org/digitalconstruction/Agents#Fireproofing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Fireproofing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#Fireproofing> <http://www.w3.org/2000/01/rdf-schema#label> "Fireproofing" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Fireproofing
+<https://w3id.org/digitalconstruction/0.3/Agents#Fireproofing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Fireproofing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Fireproofing> <http://www.w3.org/2000/01/rdf-schema#label> "Fireproofing" .
 # 
-# https://w3id.org/digitalconstruction/Agents#FloorCovering
-<https://w3id.org/digitalconstruction/Agents#FloorCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#label> "FloorCovering" .
+# https://w3id.org/digitalconstruction/0.3/Agents#FloorCovering
+<https://w3id.org/digitalconstruction/0.3/Agents#FloorCovering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#FloorCovering> <http://www.w3.org/2000/01/rdf-schema#label> "FloorCovering" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Foreman
-<https://w3id.org/digitalconstruction/Agents#Foreman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Foreman> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#IndividualRole> .
-<https://w3id.org/digitalconstruction/Agents#Foreman> <http://www.w3.org/2000/01/rdf-schema#label> "Foreman" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Foreman
+<https://w3id.org/digitalconstruction/0.3/Agents#Foreman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Foreman> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#IndividualRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Foreman> <http://www.w3.org/2000/01/rdf-schema#label> "Foreman" .
 # 
-# https://w3id.org/digitalconstruction/Agents#GeneralContractor
-<https://w3id.org/digitalconstruction/Agents#GeneralContractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#GeneralContractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConsortiumRole> .
-<https://w3id.org/digitalconstruction/Agents#GeneralContractor> <http://www.w3.org/2000/01/rdf-schema#label> "GeneralContractor" .
+# https://w3id.org/digitalconstruction/0.3/Agents#GeneralContractor
+<https://w3id.org/digitalconstruction/0.3/Agents#GeneralContractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#GeneralContractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConsortiumRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#GeneralContractor> <http://www.w3.org/2000/01/rdf-schema#label> "GeneralContractor" .
 # 
-# https://w3id.org/digitalconstruction/Agents#IndividualRole
-<https://w3id.org/digitalconstruction/Agents#IndividualRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#IndividualRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
-<https://w3id.org/digitalconstruction/Agents#IndividualRole> <http://www.w3.org/2000/01/rdf-schema#label> "IndividualRole" .
+# https://w3id.org/digitalconstruction/0.3/Agents#IndividualRole
+<https://w3id.org/digitalconstruction/0.3/Agents#IndividualRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#IndividualRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://w3id.org/digitalconstruction/0.3/Agents#IndividualRole> <http://www.w3.org/2000/01/rdf-schema#label> "IndividualRole" .
 # 
-# https://w3id.org/digitalconstruction/Agents#LogisticsManagement
-<https://w3id.org/digitalconstruction/Agents#LogisticsManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#LogisticsManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
-<https://w3id.org/digitalconstruction/Agents#LogisticsManagement> <http://www.w3.org/2000/01/rdf-schema#label> "LogisticsManagement" .
+# https://w3id.org/digitalconstruction/0.3/Agents#LogisticsManagement
+<https://w3id.org/digitalconstruction/0.3/Agents#LogisticsManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#LogisticsManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#LogisticsManagement> <http://www.w3.org/2000/01/rdf-schema#label> "LogisticsManagement" .
 # 
-# https://w3id.org/digitalconstruction/Agents#ManagementCapability
-<https://w3id.org/digitalconstruction/Agents#ManagementCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#ManagementCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Capability> .
-<https://w3id.org/digitalconstruction/Agents#ManagementCapability> <http://www.w3.org/2000/01/rdf-schema#label> "ManagementCapability" .
+# https://w3id.org/digitalconstruction/0.3/Agents#ManagementCapability
+<https://w3id.org/digitalconstruction/0.3/Agents#ManagementCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ManagementCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Capability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ManagementCapability> <http://www.w3.org/2000/01/rdf-schema#label> "ManagementCapability" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Masonry
-<https://w3id.org/digitalconstruction/Agents#Masonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Masonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#Masonry> <http://www.w3.org/2000/01/rdf-schema#label> "Masonry" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Masonry
+<https://w3id.org/digitalconstruction/0.3/Agents#Masonry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Masonry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Masonry> <http://www.w3.org/2000/01/rdf-schema#label> "Masonry" .
 # 
-# https://w3id.org/digitalconstruction/Agents#MechanicalWork
-<https://w3id.org/digitalconstruction/Agents#MechanicalWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#MechanicalWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#MechanicalWork> <http://www.w3.org/2000/01/rdf-schema#label> "MechanicalWork" .
+# https://w3id.org/digitalconstruction/0.3/Agents#MechanicalWork
+<https://w3id.org/digitalconstruction/0.3/Agents#MechanicalWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#MechanicalWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#MechanicalWork> <http://www.w3.org/2000/01/rdf-schema#label> "MechanicalWork" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Occupant
-<https://w3id.org/digitalconstruction/Agents#Occupant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Occupant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#StakeholderRole> .
-<https://w3id.org/digitalconstruction/Agents#Occupant> <http://www.w3.org/2000/01/rdf-schema#label> "Occupant" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Occupant
+<https://w3id.org/digitalconstruction/0.3/Agents#Occupant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Occupant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#StakeholderRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Occupant> <http://www.w3.org/2000/01/rdf-schema#label> "Occupant" .
 # 
-# https://w3id.org/digitalconstruction/Agents#OperationCapability
-<https://w3id.org/digitalconstruction/Agents#OperationCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#OperationCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Capability> .
-<https://w3id.org/digitalconstruction/Agents#OperationCapability> <http://www.w3.org/2000/01/rdf-schema#label> "OperationCapability" .
+# https://w3id.org/digitalconstruction/0.3/Agents#OperationCapability
+<https://w3id.org/digitalconstruction/0.3/Agents#OperationCapability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#OperationCapability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Capability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#OperationCapability> <http://www.w3.org/2000/01/rdf-schema#label> "OperationCapability" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Organization
-<https://w3id.org/digitalconstruction/Agents#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000027> .
-<https://w3id.org/digitalconstruction/Agents#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Agent> .
-<https://w3id.org/digitalconstruction/Agents#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "An organized group of people with a particular purpose involved in the process." .
-<https://w3id.org/digitalconstruction/Agents#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Organization
+<https://w3id.org/digitalconstruction/0.3/Agents#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000027> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "An organized group of people with a particular purpose involved in the process." .
+<https://w3id.org/digitalconstruction/0.3/Agents#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Painting
-<https://w3id.org/digitalconstruction/Agents#Painting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Painting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#Painting> <http://www.w3.org/2000/01/rdf-schema#label> "Painting" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Painting
+<https://w3id.org/digitalconstruction/0.3/Agents#Painting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Painting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Painting> <http://www.w3.org/2000/01/rdf-schema#label> "Painting" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Person
-<https://w3id.org/digitalconstruction/Agents#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000040> .
-<https://w3id.org/digitalconstruction/Agents#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Agent> .
-<https://w3id.org/digitalconstruction/Agents#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A human being involved in the construction process." .
-<https://w3id.org/digitalconstruction/Agents#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Person
+<https://w3id.org/digitalconstruction/0.3/Agents#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000040> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Entities#Agent> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "A human being involved in the construction process." .
+<https://w3id.org/digitalconstruction/0.3/Agents#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Plumbing
-<https://w3id.org/digitalconstruction/Agents#Plumbing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Plumbing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#Plumbing> <http://www.w3.org/2000/01/rdf-schema#label> "Plumbing" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Plumbing
+<https://w3id.org/digitalconstruction/0.3/Agents#Plumbing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Plumbing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Plumbing> <http://www.w3.org/2000/01/rdf-schema#label> "Plumbing" .
 # 
-# https://w3id.org/digitalconstruction/Agents#PrecastInstallation
-<https://w3id.org/digitalconstruction/Agents#PrecastInstallation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#PrecastInstallation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#PrecastInstallation> <http://www.w3.org/2000/01/rdf-schema#label> "PrecastInstallation" .
+# https://w3id.org/digitalconstruction/0.3/Agents#PrecastInstallation
+<https://w3id.org/digitalconstruction/0.3/Agents#PrecastInstallation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#PrecastInstallation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#PrecastInstallation> <http://www.w3.org/2000/01/rdf-schema#label> "PrecastInstallation" .
 # 
-# https://w3id.org/digitalconstruction/Agents#PrincipalDesigner
-<https://w3id.org/digitalconstruction/Agents#PrincipalDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#PrincipalDesigner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConsortiumRole> .
-<https://w3id.org/digitalconstruction/Agents#PrincipalDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "PrincipalDesigner" .
+# https://w3id.org/digitalconstruction/0.3/Agents#PrincipalDesigner
+<https://w3id.org/digitalconstruction/0.3/Agents#PrincipalDesigner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#PrincipalDesigner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConsortiumRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#PrincipalDesigner> <http://www.w3.org/2000/01/rdf-schema#label> "PrincipalDesigner" .
 # 
-# https://w3id.org/digitalconstruction/Agents#ProcurementManagement
-<https://w3id.org/digitalconstruction/Agents#ProcurementManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#ProcurementManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
-<https://w3id.org/digitalconstruction/Agents#ProcurementManagement> <http://www.w3.org/2000/01/rdf-schema#label> "ProcurementManagement" .
+# https://w3id.org/digitalconstruction/0.3/Agents#ProcurementManagement
+<https://w3id.org/digitalconstruction/0.3/Agents#ProcurementManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ProcurementManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ProcurementManagement> <http://www.w3.org/2000/01/rdf-schema#label> "ProcurementManagement" .
 # 
-# https://w3id.org/digitalconstruction/Agents#ProjectLeader
-<https://w3id.org/digitalconstruction/Agents#ProjectLeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#ProjectLeader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#IndividualRole> .
-<https://w3id.org/digitalconstruction/Agents#ProjectLeader> <http://www.w3.org/2000/01/rdf-schema#label> "ProjectLeader" .
+# https://w3id.org/digitalconstruction/0.3/Agents#ProjectLeader
+<https://w3id.org/digitalconstruction/0.3/Agents#ProjectLeader> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ProjectLeader> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#IndividualRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ProjectLeader> <http://www.w3.org/2000/01/rdf-schema#label> "ProjectLeader" .
 # 
-# https://w3id.org/digitalconstruction/Agents#ProjectManagement
-<https://w3id.org/digitalconstruction/Agents#ProjectManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#ProjectManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
-<https://w3id.org/digitalconstruction/Agents#ProjectManagement> <http://www.w3.org/2000/01/rdf-schema#label> "ProjectManagement" .
+# https://w3id.org/digitalconstruction/0.3/Agents#ProjectManagement
+<https://w3id.org/digitalconstruction/0.3/Agents#ProjectManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ProjectManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ProjectManagement> <http://www.w3.org/2000/01/rdf-schema#label> "ProjectManagement" .
 # 
-# https://w3id.org/digitalconstruction/Agents#ProjectOwner
-<https://w3id.org/digitalconstruction/Agents#ProjectOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#ProjectOwner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConsortiumRole> .
-<https://w3id.org/digitalconstruction/Agents#ProjectOwner> <http://www.w3.org/2000/01/rdf-schema#label> "ProjectOwner" .
+# https://w3id.org/digitalconstruction/0.3/Agents#ProjectOwner
+<https://w3id.org/digitalconstruction/0.3/Agents#ProjectOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ProjectOwner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConsortiumRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ProjectOwner> <http://www.w3.org/2000/01/rdf-schema#label> "ProjectOwner" .
 # 
-# https://w3id.org/digitalconstruction/Agents#QuantitySurveying
-<https://w3id.org/digitalconstruction/Agents#QuantitySurveying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#QuantitySurveying> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
+# https://w3id.org/digitalconstruction/0.3/Agents#QuantitySurveying
+<https://w3id.org/digitalconstruction/0.3/Agents#QuantitySurveying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#QuantitySurveying> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
 # 
-# https://w3id.org/digitalconstruction/Agents#ReinforcementInstallation
-<https://w3id.org/digitalconstruction/Agents#ReinforcementInstallation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#ReinforcementInstallation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#ReinforcementInstallation> <http://www.w3.org/2000/01/rdf-schema#label> "ReinforcementInstallation" .
+# https://w3id.org/digitalconstruction/0.3/Agents#ReinforcementInstallation
+<https://w3id.org/digitalconstruction/0.3/Agents#ReinforcementInstallation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ReinforcementInstallation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#ReinforcementInstallation> <http://www.w3.org/2000/01/rdf-schema#label> "ReinforcementInstallation" .
 # 
-# https://w3id.org/digitalconstruction/Agents#SafetyEngineering
-<https://w3id.org/digitalconstruction/Agents#SafetyEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#SafetyEngineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
-<https://w3id.org/digitalconstruction/Agents#SafetyEngineering> <http://www.w3.org/2000/01/rdf-schema#label> "SafetyEngineering" .
+# https://w3id.org/digitalconstruction/0.3/Agents#SafetyEngineering
+<https://w3id.org/digitalconstruction/0.3/Agents#SafetyEngineering> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#SafetyEngineering> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#SafetyEngineering> <http://www.w3.org/2000/01/rdf-schema#label> "SafetyEngineering" .
 # 
-# https://w3id.org/digitalconstruction/Agents#SiteManagement
-<https://w3id.org/digitalconstruction/Agents#SiteManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#SiteManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
-<https://w3id.org/digitalconstruction/Agents#SiteManagement> <http://www.w3.org/2000/01/rdf-schema#label> "SiteManagement" .
+# https://w3id.org/digitalconstruction/0.3/Agents#SiteManagement
+<https://w3id.org/digitalconstruction/0.3/Agents#SiteManagement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#SiteManagement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ManagementCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#SiteManagement> <http://www.w3.org/2000/01/rdf-schema#label> "SiteManagement" .
 # 
-# https://w3id.org/digitalconstruction/Agents#SiteManager
-<https://w3id.org/digitalconstruction/Agents#SiteManager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#SiteManager> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#IndividualRole> .
-<https://w3id.org/digitalconstruction/Agents#SiteManager> <http://www.w3.org/2000/01/rdf-schema#label> "SiteManager" .
+# https://w3id.org/digitalconstruction/0.3/Agents#SiteManager
+<https://w3id.org/digitalconstruction/0.3/Agents#SiteManager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#SiteManager> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#IndividualRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#SiteManager> <http://www.w3.org/2000/01/rdf-schema#label> "SiteManager" .
 # 
-# https://w3id.org/digitalconstruction/Agents#SiteSurveying
-<https://w3id.org/digitalconstruction/Agents#SiteSurveying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#SiteSurveying> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#DataGatheringCapability> .
-<https://w3id.org/digitalconstruction/Agents#SiteSurveying> <http://www.w3.org/2000/01/rdf-schema#label> "SiteSurveying" .
+# https://w3id.org/digitalconstruction/0.3/Agents#SiteSurveying
+<https://w3id.org/digitalconstruction/0.3/Agents#SiteSurveying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#SiteSurveying> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#DataGatheringCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#SiteSurveying> <http://www.w3.org/2000/01/rdf-schema#label> "SiteSurveying" .
 # 
-# https://w3id.org/digitalconstruction/Agents#StakeholderRole
-<https://w3id.org/digitalconstruction/Agents#StakeholderRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#StakeholderRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
-<https://w3id.org/digitalconstruction/Agents#StakeholderRole> <http://www.w3.org/2000/01/rdf-schema#label> "StakeholderRole" .
+# https://w3id.org/digitalconstruction/0.3/Agents#StakeholderRole
+<https://w3id.org/digitalconstruction/0.3/Agents#StakeholderRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#StakeholderRole> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000023> .
+<https://w3id.org/digitalconstruction/0.3/Agents#StakeholderRole> <http://www.w3.org/2000/01/rdf-schema#label> "StakeholderRole" .
 # 
-# https://w3id.org/digitalconstruction/Agents#SteelStructureInstallation
-<https://w3id.org/digitalconstruction/Agents#SteelStructureInstallation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#SteelStructureInstallation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#SteelStructureInstallation> <http://www.w3.org/2000/01/rdf-schema#label> "SteelStructureInstallation" .
+# https://w3id.org/digitalconstruction/0.3/Agents#SteelStructureInstallation
+<https://w3id.org/digitalconstruction/0.3/Agents#SteelStructureInstallation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#SteelStructureInstallation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#SteelStructureInstallation> <http://www.w3.org/2000/01/rdf-schema#label> "SteelStructureInstallation" .
 # 
-# https://w3id.org/digitalconstruction/Agents#StructuralDesign
-<https://w3id.org/digitalconstruction/Agents#StructuralDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#StructuralDesign> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#DesignCapability> .
-<https://w3id.org/digitalconstruction/Agents#StructuralDesign> <http://www.w3.org/2000/01/rdf-schema#label> "StructuralDesign" .
+# https://w3id.org/digitalconstruction/0.3/Agents#StructuralDesign
+<https://w3id.org/digitalconstruction/0.3/Agents#StructuralDesign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#StructuralDesign> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#DesignCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#StructuralDesign> <http://www.w3.org/2000/01/rdf-schema#label> "StructuralDesign" .
 # 
-# https://w3id.org/digitalconstruction/Agents#StructuralDetailing
-<https://w3id.org/digitalconstruction/Agents#StructuralDetailing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#StructuralDetailing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#DesignCapability> .
-<https://w3id.org/digitalconstruction/Agents#StructuralDetailing> <http://www.w3.org/2000/01/rdf-schema#label> "StructuralDetailing" .
+# https://w3id.org/digitalconstruction/0.3/Agents#StructuralDetailing
+<https://w3id.org/digitalconstruction/0.3/Agents#StructuralDetailing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#StructuralDetailing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#DesignCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#StructuralDetailing> <http://www.w3.org/2000/01/rdf-schema#label> "StructuralDetailing" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Subcontractor
-<https://w3id.org/digitalconstruction/Agents#Subcontractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Subcontractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConsortiumRole> .
-<https://w3id.org/digitalconstruction/Agents#Subcontractor> <http://www.w3.org/2000/01/rdf-schema#label> "Subcontractor" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Subcontractor
+<https://w3id.org/digitalconstruction/0.3/Agents#Subcontractor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Subcontractor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConsortiumRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Subcontractor> <http://www.w3.org/2000/01/rdf-schema#label> "Subcontractor" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Tiling
-<https://w3id.org/digitalconstruction/Agents#Tiling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Tiling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
-<https://w3id.org/digitalconstruction/Agents#Tiling> <http://www.w3.org/2000/01/rdf-schema#label> "Tiling" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Tiling
+<https://w3id.org/digitalconstruction/0.3/Agents#Tiling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Tiling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConstructionCapability> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Tiling> <http://www.w3.org/2000/01/rdf-schema#label> "Tiling" .
 # 
-# https://w3id.org/digitalconstruction/Agents#Vendor
-<https://w3id.org/digitalconstruction/Agents#Vendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/digitalconstruction/Agents#Vendor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConsortiumRole> .
-<https://w3id.org/digitalconstruction/Agents#Vendor> <http://www.w3.org/2000/01/rdf-schema#label> "Vendor" .
+# https://w3id.org/digitalconstruction/0.3/Agents#Vendor
+<https://w3id.org/digitalconstruction/0.3/Agents#Vendor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Vendor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/digitalconstruction/Agents#ConsortiumRole> .
+<https://w3id.org/digitalconstruction/0.3/Agents#Vendor> <http://www.w3.org/2000/01/rdf-schema#label> "Vendor" .
 # 
 # Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
