@@ -67,8 +67,8 @@
 
 ###  https://w3id.org/digitalconstruction/Agents#isResponsiblefor
 :isResponsiblefor rdf:type owl:ObjectProperty ;
-                  rdfs:domain <https://w3id.org/digitalconstruction/Entities#Agent> ;
-                  rdfs:range <https://w3id.org/digitalconstruction/Entities#Activity> .
+                  rdfs:domain :Agent ; 
+                  rdfs:range dice:Activity .
 
 ###  https://w3id.org/digitalconstruction/Entities#hasAgent
 :hasAgent rdf:type owl:ObjectProperty ;
@@ -159,12 +159,6 @@
            rdfs:label "Carpentry" .
 
 
-###  https://w3id.org/digitalconstruction/Agents#Company
-:Company rdf:type owl:Class ;
-         rdfs:subClassOf :Organization ;
-         rdfs:label "Company" .
-
-
 ###  https://w3id.org/digitalconstruction/Agents#ConsortiumRole
 :ConsortiumRole rdf:type owl:Class ;
                 rdfs:subClassOf dice:Role ;
@@ -196,21 +190,87 @@
 
 
 ###  https://w3id.org/digitalconstruction/Agents#Crew
-:Crew rdf:type owl:Class ;
-      rdfs:subClassOf :Organization ,
-                      <https://w3id.org/digitalconstruction/Entities#Group> ;
-      rdfs:label "Crew" .
+:Team rdf:type owl:Class ;
+      rdfs:subClassOf :Organization , dice:Group ;
+      rdfs:label "Team" ;
+      rdfs:comment "A set of persons working together for some purpose".
+
+###  https://w3id.org/digitalconstruction/Agents#Crew
+:DeliveryTeam rdf:type owl:Class ;
+      rdfs:subClassOf :Team ;
+      rdfs:label "DeliveryTeam" ;
+      rdfs:comment """Lead appointed party and their appointed parties (ISO 19650-1, def. 3.2.6).
+
+Note 1: A delivery team can be any size, from one person carrying out all the necessary functions through to complex, multi-layered task teams. The size and structure of each delivery team are in response to the scale and complexity of the asset management or project delivery activities.
+
+Note 2: Multiple delivery teams can be appointed simultaneously and/or sequentially in connection with a single asset or project, in response to the scale and complexity of the asset management or project delivery activities.
+
+Note 3: A delivery team can consist of multiple task teams from within the lead appointed party’s organization and any appointed parties.
+
+Note 4: A delivery team can be assembled by the appointing party rather than the lead appointed party. (ISO 19650-1, def. 3.2.6)""".
+
+:TaskTeam rdf:type owl:Class ;
+      rdfs:subClassOf :Team ;
+      rdfs:label "TaskTeam" ;
+      rdfs:comment "Individuals assembled to perform a specific task (ISO 19650-1, def. 3.2.6)" .
+
+:AssetManagementAndOperationTeam rdf:type owl:Class ;
+      rdfs:subClassOf :Team ;
+      rdfs:label "AssetManagementAndOperationTeam" ;
+      rdfs:comment "A team working in the operational phase of assets (ISO 19650-3)" .
+
+:hasAppointingParty rdf:type owl:ObjectProperty ;
+      owl:inverseOf :isAppointingPartyOf ;
+      rdfs:domain :Team ;  # is this correct? perhaps :DeliveryTeam?
+      rdfs:range :Agent ;  # is this correct? 
+      rdfs:label "hasAppointingParty" .
+
+:isAppointingPartyOf rdf:type owl:ObjectProperty ;
+      owl:inverseOf :hasAppointingParty ;
+      rdfs:domain :Agent ; 
+      rdfs:range :Team ;  
+      rdfs:label "isAppointingPartyOf" .
+
+:hasAppointedParty rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf dice:hasMember ;
+          owl:inverseOf :isAppointedPartyIn ;
+          rdfs:domain :Team ;
+          rdfs:range :Agent ;
+          rdfs:label "hasAppointedParty" .
+
+:isAppointedPartyIn rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf dice:isMemberOf ;
+          owl:inverseOf :hasAppointedParty ;
+          rdfs:domain :Agent ;
+          rdfs:range :Team ;
+          rdfs:label "isAppointedPartyIn" .
+
+:hasLeadAppointedParty rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasAppointedParty ;
+          owl:inverseOf :isLeadAppointedPartyIn ;
+          rdfs:domain :Team ;
+          rdfs:range :Agent ;
+          rdfs:label "hasLeadAppointedParty" .
+
+:isLeadAppointedPartyIn rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :isAppointedPartyIn ;
+          owl:inverseOf :hasLeadAppointedParty ;
+          rdfs:domain :Agent ;
+          rdfs:range :Team ;
+          rdfs:label "isLeadAppointedPartyIn" .
+
+
 
 
 ###  https://w3id.org/digitalconstruction/Agents#DataGatheringCapability
 :DataGatheringCapability rdf:type owl:Class ;
-                         rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#Capability> ;
+                         rdfs:subClassOf dice:Capability ;
                          rdfs:label "DataGatheringCapability" .
 
 
 ###  https://w3id.org/digitalconstruction/Agents#DesignCapability
 :DesignCapability rdf:type owl:Class ;
-                  rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#Capability> ;
+                  rdfs:subClassOf dice:Capability ;
                   rdfs:label "DesignCapability" .
 
 
@@ -276,7 +336,7 @@
 
 ###  https://w3id.org/digitalconstruction/Agents#ManagementCapability
 :ManagementCapability rdf:type owl:Class ;
-                      rdfs:subClassOf <https://w3id.org/digitalconstruction/Entities#Capability> ;
+                      rdfs:subClassOf dice:Capability ;
                       rdfs:label "ManagementCapability" .
 
 
@@ -442,5 +502,129 @@
         rdfs:subClassOf :ConsortiumRole ;
         rdfs:label "Vendor" .
 
+###
+
+:Actor rdf:type owl:Class ;
+       owl:equivalentClass [ a owl:Class ;
+			       owl:intersectionOf (:Agent [ a owl:Restriction ;
+						    	        owl:onProperty dice:isAgentIn ;
+			      	    				owl:someValuesFrom dice:Activity ]) ] ;
+       rdfs:label "Actor" ;
+       rdfs:comment """An agent that executes in activities.
+
+Person, organization or organizational unit involved in a construction process (ISO 19650-1, def 3.2.1). 
+
+Note 1: Organizational units include, but are not limited to, departments, teams.
+
+Note 2: In the context of ISO 19650-1, construction processes take place during the delivery phase
+and the operational phase.""" .
+
+:Stakeholder rdf:type owl:Class ;
+       owl:equivalentClass [ a owl:Class ; owl:intersectionOf  (:Agent  [ a owl:Class ; owl:complementOf :Actor ] ) ] ;
+       rdfs:label "Stakeholder" ;
+       rdfs:comment "An agent that has a stake on the execution of the activities but does not (necessarily) itself execute them." .
+								
+
+:LegalPersonRole rdf:type owl:Class ;
+        rdfs:subClassOf dice:Role ;
+        rdfs:label "LegalPersonRole" .
+
+:LegalPerson rdf:type owl:Class ;
+        owl:equivalentClass [ a owl:Class ;
+			        owl:intersectionOf (:Agent [ a owl:Restriction ;
+						    	       owl:onProperty dice:hasRole ;
+			      	    			       owl:someValuesFrom :LegalPersonRole ]) ] ;
+	rdfs:label "LegalPerson" ;
+	rdfs:comment "Agent that has legal rights and responsibilities in the applicable jurisdiction. " .
+
+:LegalEntity rdf:type owl:Class ;
+        owl:equivalentClass [ a owl:Class ; owl:intersectionOf  (:Organization :LegalPerson) ] ;
+	rdfs:label "LegalEntity" ;
+	rdfs:comment "Organization that has legal rights and responsibilities in the applicable jurisdiction. Alignes with org:FormalOrganization " .
+
+:LegallyCompetentNaturalPerson rdf:type owl:Class ;
+        owl:equivalentClass [ a owl:Class ; owl:intersectionOf  (:Person :LegalPerson) ] ;
+	rdfs:label "LegallyCompetentNaturalPerson" ;
+	rdfs:comment "A person that has legal rights and responsibilities in the applicable jurisdiction" .
+
+###  https://w3id.org/digitalconstruction/Agents#Company
+:Corporation rdf:type owl:Class ;
+         rdfs:subClassOf :LegalEntity ;
+         rdfs:label "Corporation" ;
+	 rdfs:comment "A legal entity established for commercial purposes" .
+
+:hasOwner rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isOwnerOf ;
+          rdfs:domain dice:Asset ;
+          rdfs:range :LegalPerson ;
+          rdfs:label "hasOwner" ;
+	  rdfs:comment "A legally recognized owner of an asset" .
+
+:isOwnerOf rdf:type owl:ObjectProperty ;
+          owl:inverseOf :hasOwner ;
+          rdfs:domain :LegalPerson ;
+          rdfs:range dice:Asset ;
+          rdfs:label "isOwnerOf" ;
+	  rdfs:comment "A legally recognized asset of an owner" .
+
+:hasControlOf rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isInControlOf ;
+          rdfs:domain :LegalPerson ;
+          rdfs:range dice:Asset ;
+          rdfs:label "hasControlOf" ;
+	  rdfs:comment "An asset over which an legal person has a legally recognized control. For instance, a tenant has a control of an apartment during the tenancy" .
+
+:isInControlOf rdf:type owl:ObjectProperty ;
+          owl:inverseOf :hasControlOf ;
+          rdfs:domain dice:Asset ;
+          rdfs:range :LegalPerson ;
+          rdfs:label "isInControlOf" ;
+	  rdfs:comment "The legal person that has legally recognized control over the asset. For instance, a tenant has a control of an apartment during the tenancy".
+
+:hasLeaseOn rdf:type owl:ObjectProperty ;
+	  rdfs:subPropertyOf :hasControlOf ;
+          owl:inverseOf :isLeasedTo ;
+          rdfs:domain :LegalPerson ;
+          rdfs:range dice:Asset ;
+          rdfs:label "hasLeaseOn" ;
+	  rdfs:comment "A lease relationship between a legal person and an asset" .
+
+:isLeasedTo rdf:type owl:ObjectProperty ;
+	  rdfs:subPropertyOf :isInControlOf ;
+          owl:inverseOf :hasLeaseOn ;
+          rdfs:domain dice:Asset ;
+          rdfs:range :LegalPerson ;
+          rdfs:label "isLeasedTo" ;
+	  rdfs:comment "A leased to relationship between an asset and a legal person" .
+
+:hasBuiltAssetUser rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isBuiltAssetUserOf ;
+          rdfs:domain dice:BuiltAsset ;
+          rdfs:range :Agent ;
+          rdfs:label "hasBuiltAssetUser" ;
+	  rdfs:comment "An agent that uses a built asset" .
+
+:isBuiltAssetUserOf rdf:type owl:ObjectProperty ;
+          owl:inverseOf :hasBuiltAssetUser ;
+          rdfs:domain :Agent ;
+          rdfs:range dice:BuiltAsset ;
+          rdfs:label "isBuiltAssetUserOf" ;
+	  rdfs:comment "A built asset that an agent uses" .
+	  
+:hasOccupant rdf:type owl:ObjectProperty ;
+	  rdfs:subPropertyOf :hasBuiltAssetUser ;
+          owl:inverseOf :isOccupantIn ;
+          rdfs:domain dice:BuiltAsset ;
+          rdfs:range :Person ;
+          rdfs:label "hasOccupant" ;
+	  rdfs:comment "A person who is an occupant of a built asset" .
+
+:isOccupantIn rdf:type owl:ObjectProperty ;
+	  rdfs:subPropertyOf :isBuiltAssetUserOf ;
+          owl:inverseOf :hasOccupant ;
+          rdfs:domain :Person ;
+          rdfs:range dice:BuiltAsset ;
+          rdfs:label "isOccupantIn" ;
+	  rdfs:comment "A built asset in which a person is an occupant" .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -265,19 +265,21 @@
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#Actor">Actor</a></li>
         <li><a href="#Agent">Agent</a></li>
         <li><a href="#ArchitecturalDesign">ArchitecturalDesign</a></li>
+        <li><a href="#AssetManagementAndOperationTeam">AssetManagementAndOperationTeam</a></li>
         <li><a href="#BuildingPermitAuthority">BuildingPermitAuthority</a></li>
         <li><a href="#BuildingSystemsDesign">BuildingSystemsDesign</a></li>
         <li><a href="#Carpentry">Carpentry</a></li>
-        <li><a href="#Company">Company</a></li>
         <li><a href="#ConsortiumRole">ConsortiumRole</a></li>
         <li><a href="#ConstructionCapability">ConstructionCapability</a></li>
         <li><a href="#ConstructionWorker">ConstructionWorker</a></li>
+        <li><a href="#Corporation">Corporation</a></li>
         <li><a href="#CostEngineering">CostEngineering</a></li>
         <li><a href="#CraneOperation">CraneOperation</a></li>
-        <li><a href="#Crew">Crew</a></li>
         <li><a href="#DataGatheringCapability">DataGatheringCapability</a></li>
+        <li><a href="#DeliveryTeam">DeliveryTeam</a></li>
         <li><a href="#DesignCapability">DesignCapability</a></li>
         <li><a href="#DesignManagement">DesignManagement</a></li>
         <li><a href="#Designer">Designer</a></li>
@@ -290,6 +292,10 @@
         <li><a href="#Goal">Goal</a></li>
         <li><a href="#IndividualRole">IndividualRole</a></li>
         <li><a href="#Intention">Intention</a></li>
+        <li><a href="#LegalEntity">LegalEntity</a></li>
+        <li><a href="#LegalPerson">LegalPerson</a></li>
+        <li><a href="#LegalPersonRole">LegalPersonRole</a></li>
+        <li><a href="#LegallyCompetentNaturalPerson">LegallyCompetentNaturalPerson</a></li>
         <li><a href="#LogisticsManagement">LogisticsManagement</a></li>
         <li><a href="#ManagementCapability">ManagementCapability</a></li>
         <li><a href="#Masonry">Masonry</a></li>
@@ -312,14 +318,36 @@
         <li><a href="#SiteManagement">SiteManagement</a></li>
         <li><a href="#SiteManager">SiteManager</a></li>
         <li><a href="#SiteSurveying">SiteSurveying</a></li>
+        <li><a href="#Stakeholder">Stakeholder</a></li>
         <li><a href="#StakeholderRole">StakeholderRole</a></li>
         <li><a href="#SteelStructureInstallation">SteelStructureInstallation</a></li>
         <li><a href="#StructuralDesign">StructuralDesign</a></li>
         <li><a href="#StructuralDetailing">StructuralDetailing</a></li>
         <li><a href="#Subcontractor">Subcontractor</a></li>
+        <li><a href="#TaskTeam">TaskTeam</a></li>
+        <li><a href="#Team">Team</a></li>
         <li><a href="#Tiling">Tiling</a></li>
         <li><a href="#Vendor">Vendor</a></li>
     </ul>
+    <div class="entity class" id="Actor">
+        <h3>Actor<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#Actor</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>An agent that executes in activities.</p>
+<p>Person, organization or organizational unit involved in a construction process (ISO 19650-1, def 3.2.1). </p>
+<p>Note 1: Organizational units include, but are not limited to, departments, teams.</p>
+<p>Note 2: In the context of ISO 19650-1, construction processes take place during the delivery phase
+and the operational phase.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="Agent">
         <h3>Agent<sup title="class" class="sup-c">c</sup></h3>
         <table>
@@ -342,22 +370,31 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Organization">Organization</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Person">Person</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Organization">Organization</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasIntention">hasIntention</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isResponsiblefor">isResponsiblefor</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isAppointingPartyOf">isAppointingPartyOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isAgentIn">isAgentIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isAppointedPartyIn">isAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isLeadAppointedPartyIn">isLeadAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isBuiltAssetUserOf">isBuiltAssetUserOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasIntention">hasIntention</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasAgent">hasAgent</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isIntentionOf">isIntentionOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAppointedParty">hasAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAppointingParty">hasAppointingParty</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasBuiltAssetUser">hasBuiltAssetUser</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAgent">hasAgent</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasLeadAppointedParty">hasLeadAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -373,6 +410,27 @@
                 <th>Super-classes</th>
                 <td>
                     <a href="#DesignCapability">DesignCapability</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="AssetManagementAndOperationTeam">
+        <h3>AssetManagementAndOperationTeam<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#AssetManagementAndOperationTeam</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A team working in the operational phase of assets (ISO 19650-3)</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Team">Team</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -422,21 +480,6 @@
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Company">
-        <h3>Company<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#Company</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="#Organization">Organization</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
     <div class="entity class" id="ConsortiumRole">
         <h3>ConsortiumRole<sup title="class" class="sup-c">c</sup></h3>
         <table>
@@ -456,8 +499,8 @@
                     <a href="#Vendor">Vendor</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ProjectOwner">ProjectOwner</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PrincipalDesigner">PrincipalDesigner</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#GeneralContractor">GeneralContractor</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Subcontractor">Subcontractor</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#GeneralContractor">GeneralContractor</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -478,18 +521,18 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#MechanicalWork">MechanicalWork</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Carpentry">Carpentry</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SteelStructureInstallation">SteelStructureInstallation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Painting">Painting</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Fireproofing">Fireproofing</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#FloorCovering">FloorCovering</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#ReinforcementInstallation">ReinforcementInstallation</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Tiling">Tiling</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#PrecastInstallation">PrecastInstallation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Masonry">Masonry</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Fireproofing">Fireproofing</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ElectricalWork">ElectricalWork</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Plumbing">Plumbing</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Masonry">Masonry</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Painting">Painting</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Carpentry">Carpentry</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Tiling">Tiling</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ReinforcementInstallation">ReinforcementInstallation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SteelStructureInstallation">SteelStructureInstallation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#MechanicalWork">MechanicalWork</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#FloorCovering">FloorCovering</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -505,6 +548,27 @@
                 <th>Super-classes</th>
                 <td>
                     <a href="#IndividualRole">IndividualRole</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Corporation">
+        <h3>Corporation<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#Corporation</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A legal entity established for commercial purposes</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#LegalEntity">LegalEntity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -539,28 +603,6 @@
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Crew">
-        <h3>Crew<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#Crew</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#Group">https://w3id.org/digitalconstruction/Entities#Group</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Organization">Organization</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-            <tr>
-                <th>In domain of</th>
-                <td>
-                    <a href="#hasCrewSize">hasCrewSize</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
     <div class="entity class" id="DataGatheringCapability">
         <h3>DataGatheringCapability<sup title="class" class="sup-c">c</sup></h3>
         <table>
@@ -571,13 +613,38 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#Capability">https://w3id.org/digitalconstruction/Entities#Capability</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Capability">dice:Capability</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
                     <a href="#SiteSurveying">SiteSurveying</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="DeliveryTeam">
+        <h3>DeliveryTeam<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#DeliveryTeam</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Lead appointed party and their appointed parties (ISO 19650-1, def. 3.2.6).</p>
+<p>Note 1: A delivery team can be any size, from one person carrying out all the necessary functions through to complex, multi-layered task teams. The size and structure of each delivery team are in response to the scale and complexity of the asset management or project delivery activities.</p>
+<p>Note 2: Multiple delivery teams can be appointed simultaneously and/or sequentially in connection with a single asset or project, in response to the scale and complexity of the asset management or project delivery activities.</p>
+<p>Note 3: A delivery team can consist of multiple task teams from within the lead appointed party’s organization and any appointed parties.</p>
+<p>Note 4: A delivery team can be assembled by the appointing party rather than the lead appointed party. (ISO 19650-1, def. 3.2.6)</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Team">Team</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -592,16 +659,16 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#Capability">https://w3id.org/digitalconstruction/Entities#Capability</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Capability">dice:Capability</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
                     <a href="#StructuralDetailing">StructuralDetailing</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#BuildingSystemsDesign">BuildingSystemsDesign</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#StructuralDesign">StructuralDesign</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ArchitecturalDesign">ArchitecturalDesign</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#StructuralDesign">StructuralDesign</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#BuildingSystemsDesign">BuildingSystemsDesign</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -757,11 +824,11 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#ConstructionWorker">ConstructionWorker</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Foreman">Foreman</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SiteManager">SiteManager</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Designer">Designer</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ProjectLeader">ProjectLeader</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Foreman">Foreman</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#ConstructionWorker">ConstructionWorker</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Designer">Designer</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SiteManager">SiteManager</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -799,6 +866,88 @@
             </tr>
         </table>
     </div>
+    <div class="entity class" id="LegalEntity">
+        <h3>LegalEntity<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#LegalEntity</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Organization that has legal rights and responsibilities in the applicable jurisdiction. Alignes with org:FormalOrganization </p>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#Corporation">Corporation</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="LegalPerson">
+        <h3>LegalPerson<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#LegalPerson</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Agent that has legal rights and responsibilities in the applicable jurisdiction. </p>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isOwnerOf">isOwnerOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasControlOf">hasControlOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasLeaseOn">hasLeaseOn</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#isInControlOf">isInControlOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isLeasedTo">isLeasedTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasOwner">hasOwner</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="LegalPersonRole">
+        <h3>LegalPersonRole<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#LegalPersonRole</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Role">dice:Role</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="LegallyCompetentNaturalPerson">
+        <h3>LegallyCompetentNaturalPerson<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#LegallyCompetentNaturalPerson</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A person that has legal rights and responsibilities in the applicable jurisdiction</p>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="LogisticsManagement">
         <h3>LogisticsManagement<sup title="class" class="sup-c">c</sup></h3>
         <table>
@@ -824,20 +973,20 @@
             <tr>
                 <th>Super-classes</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#Capability">https://w3id.org/digitalconstruction/Entities#Capability</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Capability">dice:Capability</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="#CostEngineering">CostEngineering</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ProcurementManagement">ProcurementManagement</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#ProjectManagement">ProjectManagement</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#LogisticsManagement">LogisticsManagement</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#QuantitySurveying">QuantitySurveying</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#DesignManagement">DesignManagement</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#CostEngineering">CostEngineering</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#SafetyEngineering">SafetyEngineering</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#SiteManagement">SiteManagement</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#QuantitySurveying">QuantitySurveying</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#LogisticsManagement">LogisticsManagement</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#SafetyEngineering">SafetyEngineering</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -903,8 +1052,8 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Driving">Driving</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#CraneOperation">CraneOperation</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Driving">Driving</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -931,8 +1080,7 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Crew">Crew</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#Company">Company</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Team">Team</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -969,6 +1117,18 @@
                 <th>Super-classes</th>
                 <td>
                     <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#isOccupantIn">isOccupantIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#hasOccupant">hasOccupant</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1168,6 +1328,21 @@
             </tr>
         </table>
     </div>
+    <div class="entity class" id="Stakeholder">
+        <h3>Stakeholder<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#Stakeholder</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>An agent that has a stake on the execution of the activities but does not (necessarily) itself execute them.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="StakeholderRole">
         <h3>StakeholderRole<sup title="class" class="sup-c">c</sup></h3>
         <table>
@@ -1184,8 +1359,8 @@
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#BuildingPermitAuthority">BuildingPermitAuthority</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Occupant">Occupant</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#BuildingPermitAuthority">BuildingPermitAuthority</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1250,6 +1425,73 @@
             </tr>
         </table>
     </div>
+    <div class="entity class" id="TaskTeam">
+        <h3>TaskTeam<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#TaskTeam</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>Individuals assembled to perform a specific task (ISO 19650-1, def. 3.2.6)</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Team">Team</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Team">
+        <h3>Team<sup title="class" class="sup-c">c</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#Team</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    <p>A set of persons working together for some purpose</p>
+                </td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#Organization">Organization</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Group">dice:Group</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#DeliveryTeam">DeliveryTeam</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#AssetManagementAndOperationTeam">AssetManagementAndOperationTeam</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#TaskTeam">TaskTeam</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="#hasAppointedParty">hasAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAppointingParty">hasAppointingParty</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasLeadAppointedParty">hasLeadAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In range of</th>
+                <td>
+                    <a href="#isLeadAppointedPartyIn">isLeadAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isAppointedPartyIn">isAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isAppointingPartyOf">isAppointingPartyOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="Tiling">
         <h3>Tiling<sup title="class" class="sup-c">c</sup></h3>
         <table>
@@ -1285,9 +1527,25 @@
     <h2>Object Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
         <li><a href="#hasAgent">hasAgent</a></li>
+        <li><a href="#hasAppointedParty">hasAppointedParty</a></li>
+        <li><a href="#hasAppointingParty">hasAppointingParty</a></li>
+        <li><a href="#hasBuiltAssetUser">hasBuiltAssetUser</a></li>
+        <li><a href="#hasControlOf">hasControlOf</a></li>
         <li><a href="#hasIntention">hasIntention</a></li>
+        <li><a href="#hasLeadAppointedParty">hasLeadAppointedParty</a></li>
+        <li><a href="#hasLeaseOn">hasLeaseOn</a></li>
+        <li><a href="#hasOccupant">hasOccupant</a></li>
+        <li><a href="#hasOwner">hasOwner</a></li>
         <li><a href="#isAgentIn">isAgentIn</a></li>
+        <li><a href="#isAppointedPartyIn">isAppointedPartyIn</a></li>
+        <li><a href="#isAppointingPartyOf">isAppointingPartyOf</a></li>
+        <li><a href="#isBuiltAssetUserOf">isBuiltAssetUserOf</a></li>
+        <li><a href="#isInControlOf">isInControlOf</a></li>
         <li><a href="#isIntentionOf">isIntentionOf</a></li>
+        <li><a href="#isLeadAppointedPartyIn">isLeadAppointedPartyIn</a></li>
+        <li><a href="#isLeasedTo">isLeasedTo</a></li>
+        <li><a href="#isOccupantIn">isOccupantIn</a></li>
+        <li><a href="#isOwnerOf">isOwnerOf</a></li>
         <li><a href="#isResponsiblefor">isResponsiblefor</a></li>
     </ul>
     <div class="entity property" id="hasAgent">
@@ -1319,6 +1577,132 @@
                 <th>Range(s)</th>
                 <td>
                     <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasAppointedParty">
+        <h3>hasAppointedParty<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#hasAppointedParty</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#hasMember">dice:hasMember</a>
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isAppointedPartyIn">isAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Team">Team</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasAppointingParty">
+        <h3>hasAppointingParty<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#hasAppointingParty</code></td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isAppointingPartyOf">isAppointingPartyOf</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Team">Team</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasBuiltAssetUser">
+        <h3>hasBuiltAssetUser<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#hasBuiltAssetUser</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    An agent that uses a built asset
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isBuiltAssetUserOf">isBuiltAssetUserOf</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#BuiltAsset">dice:BuiltAsset</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasControlOf">
+        <h3>hasControlOf<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#hasControlOf</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    An asset over which an legal person has a legally recognized control. For instance, a tenant has a control of an apartment during the tenancy
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isInControlOf">isInControlOf</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#LegalPerson">LegalPerson</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Asset">dice:Asset</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1356,6 +1740,150 @@
             </tr>
         </table>
     </div>
+    <div class="entity property" id="hasLeadAppointedParty">
+        <h3>hasLeadAppointedParty<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#hasLeadAppointedParty</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="#hasAppointedParty">hasAppointedParty</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isLeadAppointedPartyIn">isLeadAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Team">Team</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasLeaseOn">
+        <h3>hasLeaseOn<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#hasLeaseOn</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    A lease relationship between a legal person and an asset
+                </td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="#hasControlOf">hasControlOf</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isLeasedTo">isLeasedTo</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#LegalPerson">LegalPerson</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Asset">dice:Asset</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasOccupant">
+        <h3>hasOccupant<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#hasOccupant</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    A person who is an occupant of a built asset
+                </td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="#hasBuiltAssetUser">hasBuiltAssetUser</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isOccupantIn">isOccupantIn</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#BuiltAsset">dice:BuiltAsset</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#Person">Person</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasOwner">
+        <h3>hasOwner<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#hasOwner</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    A legally recognized owner of an asset
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#isOwnerOf">isOwnerOf</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Asset">dice:Asset</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#LegalPerson">LegalPerson</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="isAgentIn">
         <h3>isAgentIn<sup title="object property" class="sup-op">op</sup></h3>
         <table>
@@ -1379,6 +1907,132 @@
                 <th>Range(s)</th>
                 <td>
                     <a href="https://w3id.org/digitalconstruction/0.5/Entities#Activity">dice:Activity</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isAppointedPartyIn">
+        <h3>isAppointedPartyIn<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#isAppointedPartyIn</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#isMemberOf">dice:isMemberOf</a>
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#hasAppointedParty">hasAppointedParty</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#Team">Team</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isAppointingPartyOf">
+        <h3>isAppointingPartyOf<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#isAppointingPartyOf</code></td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#hasAppointingParty">hasAppointingParty</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#Team">Team</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isBuiltAssetUserOf">
+        <h3>isBuiltAssetUserOf<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#isBuiltAssetUserOf</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    A built asset that an agent uses
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#hasBuiltAssetUser">hasBuiltAssetUser</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#BuiltAsset">dice:BuiltAsset</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isInControlOf">
+        <h3>isInControlOf<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#isInControlOf</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    The legal person that has legally recognized control over the asset. For instance, a tenant has a control of an apartment during the tenancy
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#hasControlOf">hasControlOf</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Asset">dice:Asset</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#LegalPerson">LegalPerson</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1410,6 +2064,150 @@
             </tr>
         </table>
     </div>
+    <div class="entity property" id="isLeadAppointedPartyIn">
+        <h3>isLeadAppointedPartyIn<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#isLeadAppointedPartyIn</code></td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="#isAppointedPartyIn">isAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#hasLeadAppointedParty">hasLeadAppointedParty</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#Team">Team</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isLeasedTo">
+        <h3>isLeasedTo<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#isLeasedTo</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    A leased to relationship between an asset and a legal person
+                </td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="#isInControlOf">isInControlOf</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#hasLeaseOn">hasLeaseOn</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Asset">dice:Asset</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="#LegalPerson">LegalPerson</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isOccupantIn">
+        <h3>isOccupantIn<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#isOccupantIn</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    A built asset in which a person is an occupant
+                </td>
+            </tr>
+            <tr>
+                <th>Super-properties</th>
+                <td>
+                    <a href="#isBuiltAssetUserOf">isBuiltAssetUserOf</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#hasOccupant">hasOccupant</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Person">Person</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#BuiltAsset">dice:BuiltAsset</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="isOwnerOf">
+        <h3>isOwnerOf<sup title="object property" class="sup-op">op</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#isOwnerOf</code></td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>
+                    A legally recognized asset of an owner
+                </td>
+            </tr>
+            <tr>
+                <th>Inverse properties</th>
+                <td>
+                    <a href="#hasOwner">hasOwner</a><sup class="sup-op" title="object property">op</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#LegalPerson">LegalPerson</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Asset">dice:Asset</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="isResponsiblefor">
         <h3>isResponsiblefor<sup title="object property" class="sup-op">op</sup></h3>
         <table>
@@ -1420,13 +2218,13 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#Agent">https://w3id.org/digitalconstruction/Entities#Agent</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
                 <th>Range(s)</th>
                 <td>
-                    <a href="https://w3id.org/digitalconstruction/Entities#Activity">https://w3id.org/digitalconstruction/Entities#Activity</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Entities#Activity">dice:Activity</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
         </table>
@@ -1454,7 +2252,7 @@
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="#Crew">Crew</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://w3id.org/digitalconstruction/0.5/Agents#Crew">Crew</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
