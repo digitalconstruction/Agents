@@ -432,23 +432,19 @@ Note 4: A delivery team can be assembled by the appointing party rather than the
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#ProjectLeaderRole
 :ProjectLeaderRole rdf:type owl:Class ;
-                   rdfs:subClassOf :Role ;
+                   rdfs:subClassOf dice:Role ;
                    rdfs:label "ProjectLeaderRole" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#ProjectOwnerRole
 :ProjectOwnerRole rdf:type owl:Class ;
-                  rdfs:subClassOf :Role ;
+                  rdfs:subClassOf dice:Role ;
                   rdfs:label "ProjectOwnerRole" .
-
-
-###  https://w3id.org/digitalconstruction/0.5/Agents#Role
-:Role rdf:type owl:Class .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#SiteManagerRole
 :SiteManagerRole rdf:type owl:Class ;
-                 rdfs:subClassOf :Role ;
+                 rdfs:subClassOf dice:Role ;
                  rdfs:label "SiteManagerRole" .
 
 
@@ -473,7 +469,7 @@ Note 4: A delivery team can be assembled by the appointing party rather than the
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#SubcontractorRole
 :SubcontractorRole rdf:type owl:Class ;
-                   rdfs:subClassOf :Role ;
+                   rdfs:subClassOf dice:Role ;
                    rdfs:label "SubcontractorRole" .
 
 
@@ -494,7 +490,7 @@ Note 4: A delivery team can be assembled by the appointing party rather than the
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#VendorRole
 :VendorRole rdf:type owl:Class ;
-            rdfs:subClassOf :Role ;
+            rdfs:subClassOf dice:Role ;
             rdfs:label "VendorRole" .
 
 
