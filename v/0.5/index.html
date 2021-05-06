@@ -268,7 +268,6 @@
         <li><a href="#Actor">Actor</a></li>
         <li><a href="#Agent">Agent</a></li>
         <li><a href="#AssetManagementAndOperationTeam">AssetManagementAndOperationTeam</a></li>
-        <li><a href="#BuiltAsset">BuiltAsset</a></li>
         <li><a href="#Corporation">Corporation</a></li>
         <li><a href="#DeliveryTeam">DeliveryTeam</a></li>
         <li><a href="#Goal">Goal</a></li>
@@ -338,26 +337,26 @@ and the operational phase.</p>
             <tr>
                 <th>In domain of</th>
                 <td>
+                    <a href="#isBuiltAssetUserOf">isBuiltAssetUserOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isAgentIn">isAgentIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isAppointingPartyOf">isAppointingPartyOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasIntention">hasIntention</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isResponsiblefor">isResponsiblefor</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isAppointingPartyOf">isAppointingPartyOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isAppointedPartyIn">isAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isOrganizationPartOf">isOrganizationPartOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isBuiltAssetUserOf">isBuiltAssetUserOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isLeadAppointedPartyIn">isLeadAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isOrganizationPartOf">isOrganizationPartOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
+                    <a href="#hasBuiltAssetUser">hasBuiltAssetUser</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isIntentionOf">isIntentionOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasLeadAppointedParty">hasLeadAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasAppointedParty">hasAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasOrganizationPart">hasOrganizationPart</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasAppointingParty">hasAppointingParty</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasAgent">hasAgent</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasBuiltAssetUser">hasBuiltAssetUser</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasOrganizationPart">hasOrganizationPart</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasLeadAppointedParty">hasLeadAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isIntentionOf">isIntentionOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -380,15 +379,6 @@ and the operational phase.</p>
                 <td>
                     <a href="#Team">Team</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
-            </tr>
-        </table>
-    </div>
-    <div class="entity class" id="BuiltAsset">
-        <h3>BuiltAsset<sup title="class" class="sup-c">c</sup></h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#BuiltAsset</code></td>
             </tr>
         </table>
     </div>
@@ -523,17 +513,17 @@ and the operational phase.</p>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#isOwnerOf">isOwnerOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasLeaseOn">hasLeaseOn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isOwnerOf">isOwnerOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasControlOf">hasControlOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasOwner">hasOwner</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isInControlOf">isInControlOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isLeasedTo">isLeasedTo</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isInControlOf">isInControlOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasOwner">hasOwner</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -809,18 +799,18 @@ and the operational phase.</p>
             <tr>
                 <th>In domain of</th>
                 <td>
+                    <a href="#hasLeadAppointedParty">hasLeadAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasTeamSize">hasTeamSize</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#hasAppointingParty">hasAppointingParty</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasAppointedParty">hasAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasLeadAppointedParty">hasLeadAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#isAppointingPartyOf">isAppointingPartyOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isLeadAppointedPartyIn">isLeadAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isAppointedPartyIn">isAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isLeadAppointedPartyIn">isLeadAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isAppointingPartyOf">isAppointingPartyOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>

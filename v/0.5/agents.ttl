@@ -320,11 +320,6 @@ and the operational phase.""" ;
                                  rdfs:comment "A team working in the operational phase of assets (ISO 19650-3)" ;
                                  rdfs:label "AssetManagementAndOperationTeam" .
 
-
-###  https://w3id.org/digitalconstruction/0.5/Agents#BuiltAsset
-:BuiltAsset rdf:type owl:Class .
-
-
 ###  https://w3id.org/digitalconstruction/0.5/Agents#Corporation
 :Corporation rdf:type owl:Class ;
              rdfs:subClassOf :LegalEntity ;
