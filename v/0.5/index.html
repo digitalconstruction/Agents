@@ -267,7 +267,7 @@
     <ul class="hlist">
         <li><a href="#Actor">Actor</a></li>
         <li><a href="#Agent">Agent</a></li>
-        <li><a href="#AssetManagementAndOperationTeam">AssetManagementAndOperationTeam</a></li>
+        <li><a href="#AssetOperationTeam">AssetOperationTeam</a></li>
         <li><a href="#Corporation">Corporation</a></li>
         <li><a href="#DeliveryTeam">DeliveryTeam</a></li>
         <li><a href="#Goal">Goal</a></li>
@@ -330,43 +330,43 @@ and the operational phase.</p>
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="#Organization">Organization</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#Person">Person</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="#Organization">Organization</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
                     <a href="#isBuiltAssetUserOf">isBuiltAssetUserOf</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isAgentIn">isAgentIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isOrganizationPartOf">isOrganizationPartOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isAppointedPartyIn">isAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isAppointingPartyOf">isAppointingPartyOf</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasIntention">hasIntention</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isResponsiblefor">isResponsiblefor</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isAppointedPartyIn">isAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isLeadAppointedPartyIn">isLeadAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isOrganizationPartOf">isOrganizationPartOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isAgentIn">isAgentIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isResponsiblefor">isResponsiblefor</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="#hasBuiltAssetUser">hasBuiltAssetUser</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasOrganizationPart">hasOrganizationPart</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isIntentionOf">isIntentionOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasAgent">hasAgent</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasLeadAppointedParty">hasLeadAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasAppointedParty">hasAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasOrganizationPart">hasOrganizationPart</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasBuiltAssetUser">hasBuiltAssetUser</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasAppointingParty">hasAppointingParty</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#hasAgent">hasAgent</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="entity class" id="AssetManagementAndOperationTeam">
-        <h3>AssetManagementAndOperationTeam<sup title="class" class="sup-c">c</sup></h3>
+    <div class="entity class" id="AssetOperationTeam">
+        <h3>AssetOperationTeam<sup title="class" class="sup-c">c</sup></h3>
         <table>
             <tr>
                 <th>URI</th>
-                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#AssetManagementAndOperationTeam</code></td>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#AssetOperationTeam</code></td>
             </tr>
             <tr>
                 <th>Description</th>
@@ -513,8 +513,8 @@ and the operational phase.</p>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasLeaseOn">hasLeaseOn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isOwnerOf">isOwnerOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasLeaseOn">hasLeaseOn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasControlOf">hasControlOf</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
@@ -640,7 +640,9 @@ and the operational phase.</p>
             <tr>
                 <th>In domain of</th>
                 <td>
+                    <a href="#hasGender">hasGender</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#isOccupantIn">isOccupantIn</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasBirthYear">hasBirthYear</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -791,17 +793,17 @@ and the operational phase.</p>
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="#AssetOperationTeam">AssetOperationTeam</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#DeliveryTeam">DeliveryTeam</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="#TaskTeam">TaskTeam</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="#AssetManagementAndOperationTeam">AssetManagementAndOperationTeam</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="#hasLeadAppointedParty">hasLeadAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasTeamSize">hasTeamSize</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="#hasAppointingParty">hasAppointingParty</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#hasLeadAppointedParty">hasLeadAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#hasAppointedParty">hasAppointedParty</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
@@ -809,8 +811,8 @@ and the operational phase.</p>
                 <th>In range of</th>
                 <td>
                     <a href="#isAppointedPartyIn">isAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
-                    <a href="#isLeadAppointedPartyIn">isLeadAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="#isAppointingPartyOf">isAppointingPartyOf</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="#isLeadAppointedPartyIn">isLeadAppointedPartyIn</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -1492,12 +1494,6 @@ and the operational phase.</p>
                 </td>
             </tr>
             <tr>
-                <th>Inverse properties</th>
-                <td>
-                    <a href="#hasOrganizationPart">hasOrganizationPart</a><sup class="sup-op" title="object property">op</sup>
-                </td>
-            </tr>
-            <tr>
                 <th>Domain(s)</th>
                 <td>
                     <a href="#Agent">Agent</a><sup class="sup-c" title="class">c</sup>
@@ -1582,8 +1578,52 @@ and the operational phase.</p>
 <section id="datatypeproperties">
     <h2>Datatype Properties <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
+        <li><a href="#hasBirthYear">hasBirthYear</a></li>
+        <li><a href="#hasGender">hasGender</a></li>
         <li><a href="#hasTeamSize">hasTeamSize</a></li>
     </ul>
+    <div class="entity property" id="hasBirthYear">
+        <h3>hasBirthYear<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#hasBirthYear</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Person">Person</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">xsd:nonNegativeInteger</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity property" id="hasGender">
+        <h3>hasGender<sup title="datatype property" class="sup-dp">dp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://w3id.org/digitalconstruction/0.5/Agents#hasGender</code></td>
+            </tr>
+            <tr>
+                <th>Domain(s)</th>
+                <td>
+                    <a href="#Person">Person</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+            <tr>
+                <th>Range(s)</th>
+                <td>
+                    <a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a><sup class="sup-c" title="class">c</sup>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity property" id="hasTeamSize">
         <h3>hasTeamSize<sup title="datatype property" class="sup-dp">dp</sup></h3>
         <table>

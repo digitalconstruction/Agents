@@ -151,11 +151,11 @@
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#hasOrganizationPart
 :hasOrganizationPart rdf:type owl:ObjectProperty ;
-                       rdfs:subPropertyOf dice:hasMemberPartAtAllTimes ;
-                       owl:inverseOf :isOrganizationPartOf ;
-                       rdfs:domain :Organization ;
-                       rdfs:range :Agent ;
-                       rdfs:label "hasOrganizationPart" .
+                     rdfs:subPropertyOf dice:hasMemberPartAtAllTimes ;
+                     owl:inverseOf :isOrganizationPartOf ;
+                     rdfs:domain :Organization ;
+                     rdfs:range :Agent ;
+                     rdfs:label "hasOrganizationPart" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#hasOwner
@@ -243,7 +243,6 @@
 ###  https://w3id.org/digitalconstruction/0.5/Agents#isOrganizationPartOf
 :isOrganizationPartOf rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf dice:isMemberPartOf ;
-                      owl:inverseOf :hasOrganizationPart ;
                       rdfs:domain :Agent ;
                       rdfs:range :Organization ;
                       rdfs:label "isOrganizationPartOf" .
@@ -274,6 +273,20 @@ dice:isOccupiedIn rdf:type owl:ObjectProperty .
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://w3id.org/digitalconstruction/0.5/Agents#hasBirthYear
+:hasBirthYear rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Person ;
+              rdfs:range xsd:nonNegativeInteger ;
+              rdfs:label "hasBirthYear" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Agents#hasGender
+:hasGender rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:string ;
+           rdfs:label "hasGender" .
+
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#hasTeamSize
 :hasTeamSize rdf:type owl:DatatypeProperty ;
@@ -314,11 +327,12 @@ and the operational phase.""" ;
        rdfs:label "Agent" .
 
 
-###  https://w3id.org/digitalconstruction/0.5/Agents#AssetManagementAndOperationTeam
-:AssetManagementAndOperationTeam rdf:type owl:Class ;
-                                 rdfs:subClassOf :Team ;
-                                 rdfs:comment "A team working in the operational phase of assets (ISO 19650-3)" ;
-                                 rdfs:label "AssetManagementAndOperationTeam" .
+###  https://w3id.org/digitalconstruction/0.5/Agents#AssetOperationTeam
+:AssetOperationTeam rdf:type owl:Class ;
+                    rdfs:subClassOf :Team ;
+                    rdfs:comment "A team working in the operational phase of assets (ISO 19650-3)" ;
+                    rdfs:label "AssetOperationTeam" .
+
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#Corporation
 :Corporation rdf:type owl:Class ;
@@ -401,7 +415,7 @@ Note 4: A delivery team can be assembled by the appointing party rather than the
           owl:equivalentClass [ owl:intersectionOf ( :Person
                                                      [ rdf:type owl:Restriction ;
                                                        owl:onProperty dice:isOccupiedIn ;
-                                                       owl:someValuesFrom :BuiltAsset
+                                                       owl:someValuesFrom dice:BuiltAsset
                                                      ]
                                                    ) ;
                                 rdf:type owl:Class
