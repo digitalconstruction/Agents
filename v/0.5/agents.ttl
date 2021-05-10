@@ -71,7 +71,7 @@
 :hasAgent rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf dice:hasParticipant ;
           owl:inverseOf :isAgentIn ;
-          rdfs:domain dicp:Activity ;
+          rdfs:domain dice:Process ;
           rdfs:range :Agent ;
           rdfs:label "hasAgent" .
 
@@ -171,7 +171,7 @@
 :isAgentIn rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf dice:isParticipantIn ;
            rdfs:domain :Agent ;
-           rdfs:range dicp:Activity ;
+           rdfs:range dice:Process ;
            rdfs:label "isAgentIn" .
 
 
