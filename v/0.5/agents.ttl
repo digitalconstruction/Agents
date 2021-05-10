@@ -414,7 +414,7 @@ Note 4: A delivery team can be assembled by the appointing party rather than the
 :Occupant rdf:type owl:Class ;
           owl:equivalentClass [ owl:intersectionOf ( :Person
                                                      [ rdf:type owl:Restriction ;
-                                                       owl:onProperty dice:isOccupiedIn ;
+                                                       owl:onProperty dice:isOccupantIn ;
                                                        owl:someValuesFrom dice:BuiltAsset
                                                      ]
                                                    ) ;
