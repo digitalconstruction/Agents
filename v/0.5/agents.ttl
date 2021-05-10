@@ -420,7 +420,7 @@ Note 4: A delivery team can be assembled by the appointing party rather than the
                                                    ) ;
                                 rdf:type owl:Class
                               ] ;
-          rdfs:subClassOf :StakeholderRole ;
+			      #          rdfs:subClassOf :StakeholderRole ;
           rdfs:comment "A person that is occupant in some built asset" ;
           rdfs:label "Occupant" .
 
