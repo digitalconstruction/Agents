@@ -169,7 +169,7 @@
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#isAgentIn
 :isAgentIn rdf:type owl:ObjectProperty ;
-           rdfs:subPropertyOf dice:isParticipantIn ;
+           rdfs:subPropertyOf dice:participatesIn ;
            rdfs:domain :Agent ;
            rdfs:range dice:Process ;
            rdfs:label "isAgentIn" .
