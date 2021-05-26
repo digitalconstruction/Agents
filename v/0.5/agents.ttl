@@ -78,9 +78,8 @@
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#hasAppointedParty
 :hasAppointedParty rdf:type owl:ObjectProperty ;
-                   rdfs:subPropertyOf dice:hasMember ;
                    owl:inverseOf :isAppointedPartyIn ;
-                   rdfs:domain :Team ;
+                   rdfs:domain :Appointment ;
                    rdfs:range :Agent ;
                    rdfs:label "hasAppointedParty" .
 
@@ -88,7 +87,7 @@
 ###  https://w3id.org/digitalconstruction/0.5/Agents#hasAppointingParty
 :hasAppointingParty rdf:type owl:ObjectProperty ;
                     owl:inverseOf :isAppointingPartyOf ;
-                    rdfs:domain :Team ;
+                    rdfs:domain :Appointment ;
                     rdfs:range :Agent ;
                     rdfs:label "hasAppointingParty" .
 
@@ -177,16 +176,15 @@
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#isAppointedPartyIn
 :isAppointedPartyIn rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf dice:isMemberOf ;
                     rdfs:domain :Agent ;
-                    rdfs:range :Team ;
+                    rdfs:range :Appointment ;
                     rdfs:label "isAppointedPartyIn" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#isAppointingPartyOf
 :isAppointingPartyOf rdf:type owl:ObjectProperty ;
                      rdfs:domain :Agent ;
-                     rdfs:range :Team ;
+                     rdfs:range :Appointment ;
                      rdfs:label "isAppointingPartyOf" .
 
 
@@ -329,6 +327,12 @@ and the operational phase.""" ;
        rdfs:subClassOf dice:MaterialEntity ;
        rdfs:comment "Agents are actors or stakeholders associated with construction lifecycles" ;
        rdfs:label "Agent" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Agents#Appointment
+:Appointment rdf:type owl:Class ;
+             rdfs:subClassOf dice:RelationalQuality ;
+             rdfs:label "Appointment" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#AssetOperationTeam
