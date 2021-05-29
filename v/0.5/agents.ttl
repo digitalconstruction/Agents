@@ -110,6 +110,13 @@
               rdfs:label "hasControlOf" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Agents#hasExecutingAgent
+:hasExecutingAgent rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasAgent ;
+                   rdfs:comment "An agent of activity that is appointed to execute the activity" ;
+                   rdfs:label "hasExecutingAgent" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Agents#hasIntention
 :hasIntention rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf dice:bearerOf ;
@@ -164,6 +171,13 @@
           rdfs:range :LegalPerson ;
           rdfs:comment "A legally recognized owner of an asset" ;
           rdfs:label "hasOwner" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Agents#hasResponsibleAgent
+:hasResponsibleAgent rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasAgent ;
+                     rdfs:comment "The agent of activity with overall reponsibility that the activity gets executed" ;
+                     rdfs:label "hasResponsibleAgent" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#isAgentIn
