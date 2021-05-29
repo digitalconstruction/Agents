@@ -173,6 +173,14 @@
           rdfs:label "hasOwner" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Agents#hasProjectTeam
+:hasProjectTeam rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasExecutingAgent ;
+                rdfs:domain dicp:Project ;
+                rdfs:range :Agent ;
+                rdfs:label "hasProjectTeam" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Agents#hasResponsibleAgent
 :hasResponsibleAgent rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :hasAgent ;
