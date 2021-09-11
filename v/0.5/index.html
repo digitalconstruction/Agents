@@ -500,6 +500,11 @@ and their relations to activities. The basic class is dica:Agent, under which th
      </a>
     </li>
     <li>
+     <a href="#Tenant">
+      Tenant
+     </a>
+    </li>
+    <li>
      <a href="#VendorRole">
       VendorRole
      </a>
@@ -599,15 +604,15 @@ and the operational phase.
         c
        </sup>
        <br/>
-       <a href="#BuiltAssetOwner">
-        BuiltAssetOwner
+       <a href="#Organization">
+        Organization
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        <br/>
-       <a href="#Organization">
-        Organization
+       <a href="#BuiltAssetOwner">
+        BuiltAssetOwner
        </a>
        <sup class="sup-c" title="class">
         c
@@ -620,13 +625,6 @@ and the operational phase.
        In domain of
       </th>
       <td>
-       <a href="#isBuiltAssetUserOf">
-        isBuiltAssetUserOf
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
        <a href="#isAppointedPartyIn">
         isAppointedPartyIn
        </a>
@@ -634,15 +632,8 @@ and the operational phase.
         op
        </sup>
        <br/>
-       <a href="#hasIntention">
-        hasIntention
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#isOrganizationPartOf">
-        isOrganizationPartOf
+       <a href="#isBuiltAssetUserOf">
+        isBuiltAssetUserOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -655,6 +646,13 @@ and the operational phase.
         op
        </sup>
        <br/>
+       <a href="#isAgentIn">
+        isAgentIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#isResponsiblefor">
         isResponsiblefor
        </a>
@@ -662,8 +660,15 @@ and the operational phase.
         op
        </sup>
        <br/>
-       <a href="#isAgentIn">
-        isAgentIn
+       <a href="#isOrganizationPartOf">
+        isOrganizationPartOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasIntention">
+        hasIntention
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -683,15 +688,8 @@ and the operational phase.
        In range of
       </th>
       <td>
-       <a href="#hasAgent">
-        hasAgent
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasAppointingParty">
-        hasAppointingParty
+       <a href="#hasAppointedParty">
+        hasAppointedParty
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -711,15 +709,8 @@ and the operational phase.
         op
        </sup>
        <br/>
-       <a href="#hasLeadAppointedParty">
-        hasLeadAppointedParty
-       </a>
-       <sup class="sup-op" title="object property">
-        op
-       </sup>
-       <br/>
-       <a href="#hasAppointedParty">
-        hasAppointedParty
+       <a href="#hasAgent">
+        hasAgent
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -727,6 +718,20 @@ and the operational phase.
        <br/>
        <a href="#hasBuiltAssetUser">
         hasBuiltAssetUser
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasAppointingParty">
+        hasAppointingParty
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#hasLeadAppointedParty">
+        hasLeadAppointedParty
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -773,15 +778,15 @@ and the operational phase.
        In domain of
       </th>
       <td>
-       <a href="#hasAppointingParty">
-        hasAppointingParty
+       <a href="#hasAppointedParty">
+        hasAppointedParty
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasAppointedParty">
-        hasAppointedParty
+       <a href="#hasAppointingParty">
+        hasAppointingParty
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -794,15 +799,15 @@ and the operational phase.
        In range of
       </th>
       <td>
-       <a href="#isAppointedPartyIn">
-        isAppointedPartyIn
+       <a href="#isAppointingPartyOf">
+        isAppointingPartyOf
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#isAppointingPartyOf">
-        isAppointingPartyOf
+       <a href="#isAppointedPartyIn">
+        isAppointedPartyIn
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -879,13 +884,6 @@ and the operational phase.
        Super-classes
       </th>
       <td>
-       <a href="#Agent">
-        Agent
-       </a>
-       <sup class="sup-c" title="class">
-        c
-       </sup>
-       <br/>
        (
        <a href="#LegalPerson">
         LegalPerson
@@ -894,13 +892,48 @@ and the operational phase.
         c
        </sup>
        and
-       <a href="ub1bL371C57">
-        ub1bL371C57
+       <a href="ub1bL407C57">
+        ub1bL407C57
        </a>
        <sup class="sup-c" title="class">
         c
        </sup>
        )
+       <br/>
+       <a href="#Agent">
+        Agent
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In domain of
+      </th>
+      <td>
+       <a href="#hasTenant">
+        hasTenant
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In range of
+      </th>
+      <td>
+       <a href="#hasLandlord">
+        hasLandlord
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
        <br/>
       </td>
      </tr>
@@ -944,6 +977,41 @@ and the operational phase.
        </a>
        <sup class="sup-c" title="class">
         c
+       </sup>
+       <br/>
+       <a href="https://w3id.org/digitalconstruction/0.5/Entities#Asset">
+        dice:Asset
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In domain of
+      </th>
+      <td>
+       <a href="#hasShareholder">
+        hasShareholder
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In range of
+      </th>
+      <td>
+       <a href="#isShareholderOf">
+        isShareholderOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
        </sup>
        <br/>
       </td>
@@ -1214,15 +1282,22 @@ and the operational phase.
         op
        </sup>
        <br/>
-       <a href="#isOwnerOf">
-        isOwnerOf
+       <a href="#hasControlOf">
+        hasControlOf
        </a>
        <sup class="sup-op" title="object property">
         op
        </sup>
        <br/>
-       <a href="#hasControlOf">
-        hasControlOf
+       <a href="#isShareholderOf">
+        isShareholderOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+       <a href="#isOwnerOf">
+        isOwnerOf
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1235,6 +1310,13 @@ and the operational phase.
        In range of
       </th>
       <td>
+       <a href="#isLeasedTo">
+        isLeasedTo
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
        <a href="#isInControlOf">
         isInControlOf
        </a>
@@ -1242,8 +1324,8 @@ and the operational phase.
         op
        </sup>
        <br/>
-       <a href="#isLeasedTo">
-        isLeasedTo
+       <a href="#hasShareholder">
+        hasShareholder
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -1595,8 +1677,8 @@ and the operational phase.
        In domain of
       </th>
       <td>
-       <a href="#hasBirthYear">
-        hasBirthYear
+       <a href="#hasGender">
+        hasGender
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
@@ -1609,8 +1691,8 @@ and the operational phase.
         op
        </sup>
        <br/>
-       <a href="#hasGender">
-        hasGender
+       <a href="#hasBirthYear">
+        hasBirthYear
        </a>
        <sup class="sup-dp" title="datatype property">
         dp
@@ -1973,8 +2055,8 @@ and the operational phase.
         c
        </sup>
        <br/>
-       <a href="#ProjectTeam">
-        ProjectTeam
+       <a href="#AssetOperationTeam">
+        AssetOperationTeam
        </a>
        <sup class="sup-c" title="class">
         c
@@ -1987,8 +2069,8 @@ and the operational phase.
         c
        </sup>
        <br/>
-       <a href="#AssetOperationTeam">
-        AssetOperationTeam
+       <a href="#ProjectTeam">
+        ProjectTeam
        </a>
        <sup class="sup-c" title="class">
         c
@@ -2024,6 +2106,87 @@ and the operational phase.
       <td>
        <a href="#isLeadAppointedPartyIn">
         isLeadAppointedPartyIn
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity class" id="Tenant">
+    <h3>
+     Tenant
+     <sup class="sup-c" title="class">
+      c
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Agents#Tenant
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       <p>
+        A legal person that has a lease on some built asset
+       </p>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-classes
+      </th>
+      <td>
+       (
+       <a href="#LegalPerson">
+        LegalPerson
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       and
+       <a href="ub1bL609C48">
+        ub1bL609C48
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+       )
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In domain of
+      </th>
+      <td>
+       <a href="#hasLandlord">
+        hasLandlord
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+       <br/>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       In range of
+      </th>
+      <td>
+       <a href="#hasTenant">
+        hasTenant
        </a>
        <sup class="sup-op" title="object property">
         op
@@ -2114,6 +2277,11 @@ and the operational phase.
      </a>
     </li>
     <li>
+     <a href="#hasLandlord">
+      hasLandlord
+     </a>
+    </li>
+    <li>
      <a href="#hasLeadAppointedParty">
       hasLeadAppointedParty
      </a>
@@ -2146,6 +2314,16 @@ and the operational phase.
     <li>
      <a href="#hasResponsibleAgent">
       hasResponsibleAgent
+     </a>
+    </li>
+    <li>
+     <a href="#hasShareholder">
+      hasShareholder
+     </a>
+    </li>
+    <li>
+     <a href="#hasTenant">
+      hasTenant
      </a>
     </li>
     <li>
@@ -2206,6 +2384,11 @@ and the operational phase.
     <li>
      <a href="#isResponsiblefor">
       isResponsiblefor
+     </a>
+    </li>
+    <li>
+     <a href="#isShareholderOf">
+      isShareholderOf
      </a>
     </li>
     <li>
@@ -2647,6 +2830,73 @@ and the operational phase.
       <td>
        <a href="#Intention">
         Intention
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasLandlord">
+    <h3>
+     hasLandlord
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Agents#hasLandlord
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A tenant has a landlord who is a built asset owner
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#hasTenant">
+        hasTenant
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Tenant">
+        Tenant
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#BuiltAssetOwner">
+        BuiltAssetOwner
        </a>
        <sup class="sup-c" title="class">
         c
@@ -3118,6 +3368,140 @@ and the operational phase.
        </a>
        <sup class="sup-op" title="object property">
         op
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasShareholder">
+    <h3>
+     hasShareholder
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Agents#hasShareholder
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Partial ownership: a corporation is partially owned by a legal person
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#hasOwner">
+        hasOwner
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Inverse properties
+      </th>
+      <td>
+       <a href="#isShareholderOf">
+        isShareholderOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#Corporation">
+        Corporation
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#LegalPerson">
+        LegalPerson
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="hasTenant">
+    <h3>
+     hasTenant
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Agents#hasTenant
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       A built asset owner has a tenant
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#BuiltAssetOwner">
+        BuiltAssetOwner
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Tenant">
+        Tenant
+       </a>
+       <sup class="sup-c" title="class">
+        c
        </sup>
       </td>
      </tr>
@@ -3776,6 +4160,73 @@ and the operational phase.
       <td>
        <a href="https://w3id.org/digitalconstruction/0.5/Processes#Activity">
         dicp:Activity
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+    </table>
+   </div>
+   <div class="entity property" id="isShareholderOf">
+    <h3>
+     isShareholderOf
+     <sup class="sup-op" title="object property">
+      op
+     </sup>
+    </h3>
+    <table>
+     <tr>
+      <th>
+       URI
+      </th>
+      <td>
+       <code>
+        https://w3id.org/digitalconstruction/0.5/Agents#isShareholderOf
+       </code>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Description
+      </th>
+      <td>
+       Partial ownetship: a legal person is a partial owner of a corporation
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Super-properties
+      </th>
+      <td>
+       <a href="#isOwnerOf">
+        isOwnerOf
+       </a>
+       <sup class="sup-op" title="object property">
+        op
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Domain(s)
+      </th>
+      <td>
+       <a href="#LegalPerson">
+        LegalPerson
+       </a>
+       <sup class="sup-c" title="class">
+        c
+       </sup>
+      </td>
+     </tr>
+     <tr>
+      <th>
+       Range(s)
+      </th>
+      <td>
+       <a href="#Corporation">
+        Corporation
        </a>
        <sup class="sup-c" title="class">
         c

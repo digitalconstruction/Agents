@@ -126,6 +126,15 @@
               rdfs:label "hasIntention" .
 
 
+###  https://w3id.org/digitalconstruction/0.5/Agents#hasLandlord
+:hasLandlord rdf:type owl:ObjectProperty ;
+             owl:inverseOf :hasTenant ;
+             rdfs:domain :Tenant ;
+             rdfs:range :BuiltAssetOwner ;
+             rdfs:comment "A tenant has a landlord who is a built asset owner" ;
+             rdfs:label "hasLandlord" .
+
+
 ###  https://w3id.org/digitalconstruction/0.5/Agents#hasLeadAppointedParty
 :hasLeadAppointedParty rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasAppointedParty ;
@@ -186,6 +195,24 @@
                      rdfs:subPropertyOf :hasAgent ;
                      rdfs:comment "The agent of activity with overall reponsibility that the activity gets executed" ;
                      rdfs:label "hasResponsibleAgent" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Agents#hasShareholder
+:hasShareholder rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :hasOwner ;
+                owl:inverseOf :isShareholderOf ;
+                rdfs:domain :Corporation ;
+                rdfs:range :LegalPerson ;
+                rdfs:comment "Partial ownership: a corporation is partially owned by a legal person" ;
+                rdfs:label "hasShareholder" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Agents#hasTenant
+:hasTenant rdf:type owl:ObjectProperty ;
+           rdfs:domain :BuiltAssetOwner ;
+           rdfs:range :Tenant ;
+           rdfs:comment "A built asset owner has a tenant" ;
+           rdfs:label "hasTenant" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#isAgentIn
@@ -280,6 +307,15 @@
 :isResponsiblefor rdf:type owl:ObjectProperty ;
                   rdfs:domain :Agent ;
                   rdfs:range dicp:Activity .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Agents#isShareholderOf
+:isShareholderOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :isOwnerOf ;
+                 rdfs:domain :LegalPerson ;
+                 rdfs:range :Corporation ;
+                 rdfs:comment "Partial ownetship: a legal person is a partial owner of a corporation" ;
+                 rdfs:label "isShareholderOf" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Entities#isMemberOf
@@ -380,7 +416,8 @@ and the operational phase.""" ;
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#Corporation
 :Corporation rdf:type owl:Class ;
-             rdfs:subClassOf :LegalEntity ;
+             rdfs:subClassOf :LegalEntity ,
+                             dice:Asset ;
              rdfs:comment "A legal entity established for commercial purposes" ;
              rdfs:label "Corporation" .
 
@@ -564,6 +601,20 @@ Note 4: A delivery team can be assembled by the appointing party rather than the
                       dice:Group ;
       rdfs:comment "A set of persons working together for some purpose" ;
       rdfs:label "Team" .
+
+
+###  https://w3id.org/digitalconstruction/0.5/Agents#Tenant
+:Tenant rdf:type owl:Class ;
+        rdfs:subClassOf [ owl:intersectionOf ( :LegalPerson
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasLeaseOn ;
+                                                 owl:someValuesFrom dice:BuiltAsset
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+        rdfs:comment "A legal person that has a lease on some built asset" ;
+        rdfs:label "Tenant" .
 
 
 ###  https://w3id.org/digitalconstruction/0.5/Agents#VendorRole
